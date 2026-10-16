@@ -1,0 +1,74 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  # ─── Build and unit-test the C++ backend ────────────────────────────────────
+  build-and-test:
+    name: C++ Build & Test
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            build-essential cmake git libssl-dev libz-dev
+
+      - name: Cache CMake FetchContent
+        uses: actions/cache@v4
+        with:
+          path: backend/build/_deps
+          key: deps-${{ hashFiles('backend/CMakeLists.txt') }}
+          restore-keys: deps-
+
+      - name: Configure (Debug + ASAN)
+        run: |
+          cmake -B backend/build \
+                -S backend \
+                -DCMAKE_BUILD_TYPE=Debug \
+                -DSMARTCITY_BUILD_TESTS=ON \
+                -DSMARTCITY_BUILD_BENCH=OFF \
+                -DSMARTCITY_ENABLE_ASAN=ON
+
+      - name: Build
+        run: cmake --build backend/build --parallel 4
+
+      - name: Run unit tests
+        run: ctest --test-dir backend/build --output-on-failure -j4
+
+  # ─── Docker image build validation ─────────────────────────────────────────
+  docker-build:
+    name: Docker Build
+    runs-on: ubuntu-22.04
+    needs: build-and-test
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker image (no push on PRs)
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: false
+          tags: smartcity:ci-${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Smoke-test /healthz
+        run: |
+          docker run -d --name sc_smoke -p 8080:8080 \
+            -e PORT=8080 smartcity:ci-${{ github.sha }}
+          sleep 10
+          curl --fail http://localhost:8080/healthz
+          docker rm -f sc_smoke

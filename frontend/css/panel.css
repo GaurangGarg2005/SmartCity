@@ -1,0 +1,29 @@
+/* ═══════════════════════ Panel (desktop, ~400 px) ═══════════════ */
+.panel {
+  position: fixed;
+  top: var(--sp-4);
+  left: var(--sp-4);
+  bottom: var(--sp-4);
+  width: var(--panel-width);
+  z-index: var(--z-panel);
+  background: var(--clr-surface);
+  border-radius: var(--panel-radius);
+  box-shadow: var(--shadow-xl);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--clr-border);
+}
+
+.panel__content {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.panel__welcome {
+  padding: var(--sp-5) var(--sp-4);
+  color: var(--clr-text-2);
+}
+
+.panel__welcome-text { font-size: var(--text-sm); margin-bottom: var(--sp-4); }

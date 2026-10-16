@@ -1,0 +1,6 @@
+# Placeholder — MapLibre GL JS 4.5.2 vendored here in Phase 3
+# Files to download:
+#   https://unpkg.com/maplibre-gl@4.5.2/dist/maplibre-gl.js
+#   https://unpkg.com/maplibre-gl@4.5.2/dist/maplibre-gl.css
+# These are NOT downloaded at runtime; they must be present in this directory
+# at build time and baked into the Docker image.

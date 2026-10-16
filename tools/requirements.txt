@@ -1,0 +1,2 @@
+requests>=2.31.0
+osmium>=3.7.0

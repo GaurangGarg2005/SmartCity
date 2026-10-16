@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    image: smartcity:local
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: "8080"
+      CORS_ORIGIN: "http://localhost:8080"
+      LOG_LEVEL: "debug"
+      SIM_VEHICLES: "500"
+      SIM_SEED: "42"
+      WEIGHT_MODEL: "greenshields"
+      ENABLE_TOMTOM: "false"
+      ENABLE_PHOTON: "false"
+      ENABLE_WEATHER: "true"
+      RATE_LIMIT_HTTP: "120"
+      RATE_LIMIT_WS: "20"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s

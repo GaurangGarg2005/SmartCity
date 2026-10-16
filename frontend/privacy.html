@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy — SmartCity</title>
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/app.css" />
+  <style>
+    body { overflow: auto; padding: var(--sp-6); max-width: 720px; margin: 0 auto; line-height: 1.7; }
+    h1 { font-size: var(--text-2xl); margin-bottom: var(--sp-4); }
+    h2 { font-size: var(--text-lg); margin: var(--sp-5) 0 var(--sp-2); }
+    p, li { color: var(--clr-text-2); font-size: var(--text-sm); }
+    a { color: var(--clr-brand); }
+  </style>
+</head>
+<body data-theme="system">
+  <a href="/" style="color:var(--clr-brand);font-size:var(--text-sm)">← Back to map</a>
+  <h1>Privacy Policy</h1>
+  <p><em>Last updated: Phase 7 (date TBD)</em></p>
+
+  <h2>Data We Collect (opt-in only)</h2>
+  <p>When you explicitly consent, SmartCity may collect anonymous location samples
+  (latitude, longitude, speed, heading) and a random per-session ID. No accounts,
+  no names, no email addresses.</p>
+
+  <h2>How Data Is Used</h2>
+  <p>Location samples estimate real-time road speeds. They are never shown to other
+  users, never sold, and never shared with third parties.</p>
+
+  <h2>Retention</h2>
+  <p>Raw samples are kept <strong>in memory only</strong> and discarded after
+  <strong>2 minutes</strong>. Nothing is written to disk or persisted across server restarts.</p>
+
+  <h2>Consent & Withdrawal</h2>
+  <p>Tap the "sharing" indicator in the app to stop sharing at any time.
+  Refreshing the page also stops sharing immediately.</p>
+
+  <h2>Third-Party Services</h2>
+  <ul>
+    <li><a href="https://openfreemap.org/" target="_blank" rel="noopener">OpenFreeMap</a> — map tiles (MIT)</li>
+    <li><a href="https://open-meteo.com/privacy" target="_blank" rel="noopener">Open-Meteo</a> — weather data (CC BY 4.0, no key)</li>
+    <li>TomTom Traffic Flow — optional, requires API key, disabled by default</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>This is a student academic project (JIIT Noida, CSE/IT Batch 2024).
+  Contact via the <a href="https://github.com/YOUR_USERNAME/smartcity" target="_blank" rel="noopener">GitHub repository</a>.</p>
+</body>
+</html>

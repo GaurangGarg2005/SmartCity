@@ -1,0 +1,18 @@
+/* ═══════════════════ Traffic layer tooltip ══════════════════════ */
+.traffic-tooltip {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-md);
+  padding: var(--sp-3) var(--sp-4);
+  font-size: var(--text-sm);
+  max-width: 260px;
+}
+.traffic-tooltip__name  { font-weight: 600; margin-bottom: var(--sp-1); }
+.traffic-tooltip__row   { display: flex; justify-content: space-between; gap: var(--sp-4); color: var(--clr-text-2); }
+.traffic-tooltip__badge { font-size: var(--text-xs); padding: 2px var(--sp-2);
+                          border-radius: var(--r-pill); font-weight: 600; }
+.badge--free  { background: var(--clr-traffic-free)  ; color: #fff; }
+.badge--slow  { background: var(--clr-traffic-slow)  ; color: #fff; }
+.badge--heavy { background: var(--clr-traffic-heavy) ; color: #fff; }
+.badge--jam   { background: var(--clr-traffic-jam)   ; color: #fff; }

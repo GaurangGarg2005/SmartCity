@@ -1,0 +1,39 @@
+/* ═══════════════════════ Mobile bottom sheet ════════════════════ */
+.sheet {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: var(--z-panel);
+  background: var(--clr-surface);
+  border-radius: var(--r-xl) var(--r-xl) 0 0;
+  box-shadow: var(--shadow-xl);
+  border-top: 1px solid var(--clr-border);
+  max-height: 90dvh;
+  transform: translateY(calc(100% - 80px)); /* peek state */
+  transition: transform var(--t-slow);
+  display: none; /* shown only on mobile via JS + breakpoint */
+  touch-action: none;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.sheet__handle {
+  width: 40px; height: 4px;
+  background: var(--clr-border);
+  border-radius: var(--r-pill);
+  margin: var(--sp-2) auto var(--sp-3);
+  cursor: grab;
+}
+
+.sheet__content {
+  padding: 0 var(--sp-4) var(--sp-4);
+  overflow-y: auto;
+  max-height: calc(90dvh - 24px);
+}
+
+@media (max-width: 768px) {
+  .sheet { display: flex; flex-direction: column; }
+}
+
+/* Snap states driven by JS class */
+.sheet.snap-peek   { transform: translateY(calc(100% - 80px)); }
+.sheet.snap-half   { transform: translateY(50%); }
+.sheet.snap-full   { transform: translateY(0); }

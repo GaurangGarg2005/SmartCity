@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: smartcity
+    runtime: docker
+    # repo: https://github.com/YOUR_USER/SmartCity  # uncomment and set before deploy
+    branch: main
+    region: oregon            # oregon is closest free-tier region; update if needed
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /healthz
+    envVars:
+      - key: PORT
+        value: "10000"          # Render injects $PORT; this is the Render default
+      - key: CORS_ORIGIN
+        value: "https://smartcity.onrender.com"   # update after first deploy
+      - key: LOG_LEVEL
+        value: info
+      - key: SIM_VEHICLES
+        value: "300"        # lowered from 500 — keeps CPU within 0.1 vCPU budget
+      - key: SIM_SEED
+        value: "0"
+      - key: WEIGHT_MODEL
+        value: greenshields
+      - key: ENABLE_TOMTOM
+        value: "false"
+      - key: ENABLE_PHOTON
+        value: "false"
+      - key: ENABLE_WEATHER
+        value: "true"
+      - key: RATE_LIMIT_HTTP
+        value: "60"
+      - key: RATE_LIMIT_WS
+        value: "10"
+      # Secrets — set these manually in the Render dashboard, NOT here:
+      # ADMIN_PIN
+      # TOMTOM_API_KEY

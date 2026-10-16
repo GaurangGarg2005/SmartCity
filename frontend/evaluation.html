@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evaluation — SmartCity</title>
+  <meta name="description" content="SmartCity route evaluation: compare Dijkstra vs free-flow routes across traffic scenarios with measurable results." />
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/app.css" />
+  <style>
+    body { overflow: auto; padding: var(--sp-6); max-width: 900px; margin: 0 auto; }
+    h1 { font-size: var(--text-2xl); margin-bottom: var(--sp-4); }
+  </style>
+</head>
+<body data-theme="system">
+  <a href="/" style="color:var(--clr-brand);font-size:var(--text-sm)">← Back to map</a>
+  <h1>Route Evaluation</h1>
+  <p style="color:var(--clr-text-2);margin-bottom:var(--sp-6)">
+    Compare static free-flow routes against adaptive Dijkstra routes under
+    different traffic scenarios. Results are seeded and reproducible.
+    Full implementation in Phase 8.
+  </p>
+  <div id="eval-controls" style="display:flex;gap:var(--sp-3);flex-wrap:wrap;margin-bottom:var(--sp-6)">
+    <label>Pairs
+      <input id="eval-pairs" type="number" value="200" min="10" max="500" style="width:80px;margin-left:var(--sp-2)" />
+    </label>
+    <label>Seed
+      <input id="eval-seed" type="number" value="42" min="0" style="width:100px;margin-left:var(--sp-2)" />
+    </label>
+    <button id="btn-run-eval" style="padding:var(--sp-2) var(--sp-4);background:var(--clr-brand);color:#fff;border:none;border-radius:var(--r-pill);cursor:pointer;font-size:var(--text-sm)">
+      Run Evaluation
+    </button>
+    <button id="btn-export-csv" style="padding:var(--sp-2) var(--sp-4);background:var(--clr-surface-2);border:1px solid var(--clr-border);border-radius:var(--r-pill);cursor:pointer;font-size:var(--text-sm)">
+      Export CSV
+    </button>
+  </div>
+  <div id="eval-results">
+    <p style="color:var(--clr-text-3)">Results will appear here after running the evaluation.</p>
+  </div>
+  <script type="module">
+    document.getElementById('btn-run-eval').addEventListener('click', () => {
+      document.getElementById('eval-results').innerHTML =
+        '<p style="color:var(--clr-text-2)">Evaluation page implemented in Phase 8.</p>';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+# Git: ignore build artifacts, secrets, and generated data
+
+# ── Secrets ─────────────────────────────────────────────────────
+.env
+*.env.local
+
+# ── C++ build ────────────────────────────────────────────────────
+build/
+backend/build/
+backend/_deps/
+*.o *.a *.so *.dll *.exe
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+
+# ── Python ────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+.venv/
+venv/
+
+# ── OS ────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+
+# ── Large generated data (if too big to commit) ────────────────────
+# data/graph.bin
+data/*_cache.xml
+data/osm_cache.xml
+
+# ── Vendor (MapLibre is committed; exclude other large vendored files) ──
+# frontend/vendor/
+
+# ── Reports ───────────────────────────────────────────────────────
+docs/report_assets/*.mp4

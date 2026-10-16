@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+  <title>SmartCity — Graph-Theoretic Traffic Routing</title>
+  <meta name="description" content="SmartCity visualizes real-time traffic prediction and adaptive route optimization on a Noida road network modelled as a weighted graph. Powered by Dijkstra's algorithm in C++." />
+
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+
+  <!-- MapLibre GL JS — vendored locally, no CDN dependency -->
+  <link  rel="stylesheet" href="/vendor/maplibre-gl.css" />
+  <script src="/vendor/maplibre-gl.js"></script>
+
+  <!-- App shell CSS -->
+  <link rel="stylesheet" href="/css/tokens.css" />
+  <link rel="stylesheet" href="/css/app.css" />
+  <link rel="stylesheet" href="/css/panel.css" />
+  <link rel="stylesheet" href="/css/sheet.css" />
+  <link rel="stylesheet" href="/css/search.css" />
+  <link rel="stylesheet" href="/css/route.css" />
+  <link rel="stylesheet" href="/css/traffic.css" />
+  <link rel="stylesheet" href="/css/graph-mode.css" />
+  <link rel="stylesheet" href="/css/nav.css" />
+</head>
+<body data-theme="system">
+
+  <!-- ══ Cold-start overlay (shown while free server wakes) ════════════════ -->
+  <div id="cold-start-overlay" class="cold-start" role="status" aria-live="polite">
+    <div class="cold-start__card">
+      <div class="cold-start__logo" aria-hidden="true">🗺️</div>
+      <h1 class="cold-start__title">SmartCity</h1>
+      <p class="cold-start__msg">Waking up the free server — this usually takes about a minute…</p>
+      <div class="cold-start__bar" role="progressbar" aria-label="Loading progress">
+        <div class="cold-start__fill" id="cold-start-progress" style="width:0%"></div>
+      </div>
+      <p class="cold-start__sub" id="cold-start-status">Connecting…</p>
+    </div>
+  </div>
+
+  <!-- ══ Map canvas ════════════════════════════════════════════════════════ -->
+  <div id="map" role="application" aria-label="SmartCity interactive map"></div>
+
+  <!-- ══ Desktop floating left panel ══════════════════════════════════════ -->
+  <aside id="panel" class="panel" aria-label="Route and search panel">
+
+    <!-- Search bar -->
+    <div class="search-bar" role="search">
+      <button class="search-bar__menu" id="btn-menu" aria-label="Open menu" aria-expanded="false">
+        <span class="icon icon-menu" aria-hidden="true"></span>
+      </button>
+      <div class="search-bar__inputs">
+        <div class="search-field" id="search-from-wrap">
+          <span class="search-field__dot search-field__dot--a" aria-hidden="true"></span>
+          <input id="search-from"
+                 class="search-field__input"
+                 type="search"
+                 placeholder="Choose starting point"
+                 autocomplete="off"
+                 aria-label="Starting point"
+                 aria-autocomplete="list"
+                 aria-controls="search-from-results" />
+          <button class="search-field__clear hidden" id="search-from-clear" aria-label="Clear starting point">✕</button>
+        </div>
+        <div class="search-field search-field--dest" id="search-to-wrap">
+          <span class="search-field__dot search-field__dot--b" aria-hidden="true"></span>
+          <input id="search-to"
+                 class="search-field__input"
+                 type="search"
+                 placeholder="Search destination"
+                 autocomplete="off"
+                 aria-label="Destination"
+                 aria-autocomplete="list"
+                 aria-controls="search-to-results" />
+          <button class="search-field__clear hidden" id="search-to-clear" aria-label="Clear destination">✕</button>
+        </div>
+      </div>
+      <button class="search-bar__swap" id="btn-swap" aria-label="Swap origin and destination">⇅</button>
+    </div>
+
+    <!-- Autocomplete dropdown lists -->
+    <ul id="search-from-results" class="autocomplete hidden" role="listbox" aria-label="Origin suggestions"></ul>
+    <ul id="search-to-results"   class="autocomplete hidden" role="listbox" aria-label="Destination suggestions"></ul>
+
+    <!-- Panel content area (routes / place card / settings) -->
+    <div id="panel-content" class="panel__content">
+      <!-- Welcome / recent searches -->
+      <div class="panel__welcome" id="panel-welcome">
+        <p class="panel__welcome-text">Search a destination or tap the map to get started.</p>
+        <div class="recent-searches" id="recent-searches" aria-label="Recent searches"></div>
+      </div>
+
+      <!-- Route result panel -->
+      <div class="route-panel hidden" id="route-panel" aria-label="Route details">
+        <div class="route-summary">
+          <span class="route-stat" id="route-duration">— min</span>
+          <span class="route-stat route-stat--dist" id="route-distance">— km</span>
+          <span class="route-stat route-stat--eta" id="route-eta">—</span>
+          <span class="route-delay hidden" id="route-delay"></span>
+        </div>
+        <div class="route-algo-stats" id="route-stats" title="Dijkstra stats"></div>
+        <ul class="route-steps" id="route-steps" aria-label="Turn-by-turn directions"></ul>
+        <p class="route-error hidden" id="route-error"></p>
+
+        <!-- Leave-time selector (Phase 5: horizon prediction) -->
+        <div class="leave-time" id="leave-time" aria-label="Leave time">
+          <button class="leave-btn active" data-horizon="0" id="leave-now">Now</button>
+          <button class="leave-btn" data-horizon="5"  id="leave-5">+5 min</button>
+          <button class="leave-btn" data-horizon="10" id="leave-10">+10 min</button>
+          <button class="leave-btn" data-horizon="15" id="leave-15">+15 min</button>
+          <button class="leave-btn" data-horizon="30" id="leave-30">+30 min</button>
+        </div>
+
+        <div class="route-actions">
+          <button class="route-btn" id="btn-get-route">Get Route</button>
+          <button class="route-btn route-btn--clear" id="btn-clear-route">Clear</button>
+          <button class="route-btn route-btn--theme" id="btn-theme" aria-label="Toggle theme">🌙</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reroute banner (within panel) -->
+    <div class="reroute-banner hidden" id="reroute-banner" role="alert">
+      <span id="reroute-text">Faster route available</span>
+      <button id="btn-reroute-switch">Switch</button>
+      <button id="btn-reroute-keep">Keep</button>
+    </div>
+
+    <!-- Status bar: data-source badge + WS connection -->
+    <div class="status-bar" id="status-bar" aria-live="polite">
+      <span class="badge badge--sim" id="data-source-badge" title="Data source">SIMULATED LIVE</span>
+      <span class="ws-status ws-disconnected" id="ws-status" title="WebSocket status">●</span>
+      <span class="badge badge--tick hidden" id="badge-tick"></span>
+      <span class="badge badge--fidelity hidden" id="sim-reduced-fidelity" title="Reduced simulation fidelity">⚠ Reduced fidelity</span>
+    </div>
+
+    <!-- Sim vehicle / speed counters -->
+    <div class="sim-counters" id="sim-counters">
+      <span>🚗 <strong id="sim-vehicle-count">—</strong> vehicles</span>
+      <span>⏩ <strong id="sim-speed-mult">1×</strong></span>
+    </div>
+  </aside>
+
+  <!-- ══ Mobile bottom sheet ═══════════════════════════════════════════════ -->
+  <div id="bottom-sheet" class="sheet" role="complementary" aria-label="Route and search sheet">
+    <div class="sheet__handle" id="sheet-handle" role="button" tabindex="0"
+         aria-label="Drag to resize panel" aria-expanded="false"></div>
+    <div class="sheet__content" id="sheet-content">
+      <!-- mirrors panel content on mobile -->
+    </div>
+  </div>
+
+  <!-- ══ Map overlay controls ══════════════════════════════════════════════ -->
+  <div class="map-controls" id="map-controls" aria-label="Map controls">
+    <button class="map-btn" id="btn-zoom-in"   aria-label="Zoom in">+</button>
+    <button class="map-btn" id="btn-zoom-out"  aria-label="Zoom out">−</button>
+    <button class="map-btn" id="btn-compass"   aria-label="Reset north" title="Reset north">⊕</button>
+    <button class="map-btn" id="btn-my-loc"    aria-label="My location">⊙</button>
+  </div>
+
+  <!-- ══ Layer toggles ════════════════════════════════════════════════════ -->
+  <div class="layer-toggles" id="layer-toggles" aria-label="Layer controls">
+    <button class="layer-btn active" id="btn-traffic"    aria-pressed="true">Traffic</button>
+    <button class="layer-btn active" id="btn-vehicles"   aria-pressed="true">Vehicles</button>
+    <button class="layer-btn"        id="btn-graph-mode" aria-pressed="false">Graph Mode</button>
+  </div>
+
+  <!-- ══ Traffic legend ═══════════════════════════════════════════════════ -->
+  <div class="traffic-legend hidden" id="traffic-legend" aria-label="Traffic congestion legend">
+    <span class="legend-item legend-item--free">Free flow</span>
+    <span class="legend-item legend-item--slow">Slow</span>
+    <span class="legend-item legend-item--heavy">Heavy</span>
+    <span class="legend-item legend-item--jam">Jam</span>
+  </div>
+
+  <!-- ══ Navigation mode banner ══════════════════════════════════════════ -->
+  <div class="nav-banner hidden" id="nav-banner" role="status" aria-live="polite">
+    <div class="nav-banner__maneuver" id="nav-next-maneuver">
+      <span class="nav-banner__icon" id="nav-maneuver-icon" aria-hidden="true">↑</span>
+      <div class="nav-banner__info">
+        <span class="nav-banner__dist" id="nav-maneuver-dist">—</span>
+        <span class="nav-banner__road" id="nav-maneuver-road">—</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ Navigation bottom bar ═══════════════════════════════════════════ -->
+  <div class="nav-bar hidden" id="nav-bar" role="status">
+    <div class="nav-bar__stat">
+      <span class="nav-bar__value" id="nav-remaining-time">—</span>
+      <span class="nav-bar__label">min</span>
+    </div>
+    <div class="nav-bar__stat">
+      <span class="nav-bar__value" id="nav-remaining-dist">—</span>
+      <span class="nav-bar__label">km</span>
+    </div>
+    <div class="nav-bar__stat">
+      <span class="nav-bar__value" id="nav-eta">—</span>
+      <span class="nav-bar__label">ETA</span>
+    </div>
+    <button class="nav-bar__stop" id="btn-stop-nav" aria-label="Stop navigation">✕ Stop</button>
+  </div>
+
+  <!-- ══ Reroute / "faster route" toast ══════════════════════════════════ -->
+  <div class="reroute-toast hidden" id="reroute-toast" role="alertdialog" aria-live="assertive">
+    <span class="reroute-toast__msg" id="reroute-msg">Faster route available — saves X min</span>
+    <button class="reroute-toast__btn reroute-toast__btn--switch" id="btn-reroute-switch">Switch</button>
+    <button class="reroute-toast__btn reroute-toast__btn--keep"   id="btn-reroute-keep">Keep</button>
+  </div>
+
+  <!-- ══ Simulation / Demo panel ════════════════════════════════════════ -->
+  <div class="sim-panel hidden" id="sim-panel" aria-label="Simulation controls">
+    <div class="sim-panel__header">
+      <span class="sim-panel__title">Simulation</span>
+      <button class="sim-panel__close" id="btn-sim-close" aria-label="Close simulation panel">✕</button>
+    </div>
+    <div class="sim-panel__row">
+      <button class="sim-btn" id="btn-sim-play"  aria-label="Play simulation">▶</button>
+      <button class="sim-btn" id="btn-sim-pause" aria-label="Pause simulation">⏸</button>
+      <button class="sim-btn" id="btn-sim-reset" aria-label="Reset simulation">↺</button>
+    </div>
+    <label class="sim-label">Speed
+      <input type="range" id="sim-speed" min="1" max="10" value="1" aria-label="Simulation speed" />
+      <span id="sim-speed-val">1×</span>
+    </label>
+    <label class="sim-label">Vehicles
+      <input type="range" id="sim-vehicles" min="50" max="2000" step="50" value="500" aria-label="Vehicle count" />
+      <span id="sim-vehicles-val">500</span>
+    </label>
+    <label class="sim-label">Scenario
+      <select id="sim-scenario" aria-label="Traffic scenario">
+        <option value="follow_clock">Follow clock (IST)</option>
+        <option value="light">Light</option>
+        <option value="moderate">Moderate</option>
+        <option value="heavy">Heavy</option>
+        <option value="rush_hour">Rush Hour</option>
+      </select>
+    </label>
+    <div class="sim-panel__demos">
+      <p class="sim-panel__demos-title">One-click demos</p>
+      <button class="demo-btn" id="demo-rush-hour">🚦 Rush hour on arterial</button>
+      <button class="demo-btn" id="demo-accident">💥 Accident blocks route</button>
+      <button class="demo-btn" id="demo-rain">🌧 Rain slowdown</button>
+    </div>
+  </div>
+
+  <!-- ══ Consent dialog ════════════════════════════════════════════════ -->
+  <div class="consent-overlay hidden" id="consent-overlay" role="dialog"
+       aria-modal="true" aria-labelledby="consent-title" aria-describedby="consent-desc">
+    <div class="consent-card">
+      <h2 id="consent-title" class="consent-card__title">Share your location?</h2>
+      <p id="consent-desc" class="consent-card__desc">
+        SmartCity can anonymously use your device's location, speed and heading
+        to improve real-time traffic estimates for all users in the area.
+        <strong>No account required. Data stays in memory and is discarded after 2 minutes.
+        Your position is never shown to other users.</strong>
+        <a href="/privacy.html" target="_blank" rel="noopener">Privacy details</a>
+      </p>
+      <div class="consent-card__actions">
+        <button class="consent-btn consent-btn--allow" id="btn-consent-allow">Allow — Share anonymously</button>
+        <button class="consent-btn consent-btn--deny"  id="btn-consent-deny">No thanks</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ Context menu ═══════════════════════════════════════════════════ -->
+  <menu class="context-menu hidden" id="context-menu" aria-label="Map context menu">
+    <li><button id="ctx-dir-from">Directions from here</button></li>
+    <li><button id="ctx-dir-to">Directions to here</button></li>
+    <li><button id="ctx-what-here">What's here?</button></li>
+    <li><button id="ctx-incident">Add incident here</button></li>
+  </menu>
+
+  <!-- ══ Graph Theory Mode: Dijkstra visualizer overlay ════════════════ -->
+  <div class="graph-overlay hidden" id="graph-overlay" aria-label="Graph theory mode controls">
+    <div class="graph-overlay__header">
+      <span class="graph-overlay__title">Graph Theory Mode</span>
+      <button class="graph-overlay__close" id="btn-graph-close" aria-label="Close graph mode">✕</button>
+    </div>
+    <div class="dijkstra-viz" id="dijkstra-viz">
+      <p class="dijkstra-viz__info" id="dijkstra-info">
+        Run a route query to see the Dijkstra visualizer.
+      </p>
+      <div class="dijkstra-viz__controls hidden" id="dijkstra-controls">
+        <button class="viz-btn" id="btn-viz-play"  aria-label="Play visualizer">▶</button>
+        <button class="viz-btn" id="btn-viz-pause" aria-label="Pause visualizer">⏸</button>
+        <label class="viz-label">Speed
+          <input type="range" id="viz-speed" min="1" max="10" value="5" aria-label="Visualizer speed" />
+        </label>
+        <p class="dijkstra-viz__stats" id="dijkstra-stats"></p>
+      </div>
+    </div>
+    <div class="path-equation hidden" id="path-equation" aria-live="polite">
+      <p class="path-equation__label">Optimal path P*:</p>
+      <p class="path-equation__formula" id="path-formula"></p>
+    </div>
+  </div>
+
+  <!-- ══ Settings panel ═════════════════════════════════════════════ -->
+  <div class="settings-panel hidden" id="settings-panel" role="dialog" aria-label="Settings">
+    <div class="settings-panel__header">
+      <h2 class="settings-panel__title">Settings</h2>
+      <button class="settings-panel__close" id="btn-settings-close" aria-label="Close settings">✕</button>
+    </div>
+    <label class="setting-row">Theme
+      <select id="setting-theme" aria-label="Color theme">
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label>
+    <label class="setting-row">Units
+      <select id="setting-units" aria-label="Distance units">
+        <option value="km">Kilometres</option>
+        <option value="mi">Miles</option>
+      </select>
+    </label>
+    <p class="settings-panel__attr">
+      Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> (ODbL)<br />
+      Basemap style: <a href="https://openfreemap.org/" target="_blank" rel="noopener">OpenFreeMap</a> (MIT)<br />
+      Map renderer: <a href="https://maplibre.org/" target="_blank" rel="noopener">MapLibre GL JS</a> (BSD-2-Clause)<br />
+      Weather: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> (CC BY 4.0)
+    </p>
+  </div>
+
+  <!-- ══ Offline page placeholder ══════════════════════════════════════ -->
+  <div class="offline-msg hidden" id="offline-msg" role="alert">
+    <p>You're offline. The map may be unavailable. Please reconnect.</p>
+  </div>
+
+  <!-- ══ Share-location FAB (Phase 7) ════════════════════════════════ -->
+  <button class="btn-share-location" id="btn-share-location" aria-label="Share my location" title="Share location (opt-in)">📍</button>
+
+  <!-- ══ JS entry point ════════════════════════════════════════════════ -->
+  <script type="module" src="/js/app.js"></script>
+
+  <!-- Service Worker registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(r => console.log('[SW] registered', r.scope))
+          .catch(e => console.warn('[SW] registration failed', e));
+      });
+    }
+  </script>
+</body>
+</html>

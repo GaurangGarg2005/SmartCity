@@ -1,0 +1,28 @@
+/* ════════════ Graph Theory Mode overlay ════════════════════════ */
+.graph-overlay {
+  position: fixed;
+  top: var(--sp-4);
+  right: calc(var(--sp-4) + 56px);
+  z-index: var(--z-controls);
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  width: 280px;
+  padding: var(--sp-4);
+}
+
+.graph-overlay__header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--sp-3); }
+.graph-overlay__title  { font-weight: 600; font-size: var(--text-sm); }
+.graph-overlay__close  { border: none; background: transparent; cursor: pointer; color: var(--clr-text-2); font-size: var(--text-lg); }
+
+.dijkstra-viz__info { font-size: var(--text-sm); color: var(--clr-text-2); }
+.dijkstra-viz__controls { display: flex; flex-direction: column; gap: var(--sp-2); }
+.viz-btn { padding: var(--sp-2) var(--sp-3); border: 1px solid var(--clr-border); border-radius: var(--r-sm);
+           background: var(--clr-surface-2); cursor: pointer; font-size: var(--text-sm); }
+.viz-label { font-size: var(--text-xs); color: var(--clr-text-2); display: flex; align-items: center; gap: var(--sp-2); }
+.dijkstra-viz__stats { font-size: var(--text-xs); color: var(--clr-text-2); font-family: var(--font-mono); }
+
+.path-equation { margin-top: var(--sp-3); padding-top: var(--sp-3); border-top: 1px solid var(--clr-border); }
+.path-equation__label  { font-size: var(--text-xs); color: var(--clr-text-3); margin-bottom: var(--sp-1); }
+.path-equation__formula { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--clr-brand); word-break: break-all; }

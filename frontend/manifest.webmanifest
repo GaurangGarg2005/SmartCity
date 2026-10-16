@@ -1,0 +1,20 @@
+{
+  "name": "SmartCity",
+  "short_name": "SmartCity",
+  "description": "Graph-theoretic real-time traffic prediction and adaptive route optimization for Noida.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1a1a2e",
+  "theme_color": "#3a7bd5",
+  "categories": ["navigation", "travel", "education"],
+  "icons": [
+    { "src": "/icons/icon-192.png",       "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png",       "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/icon-maskable.png",  "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    { "src": "/icons/screenshot-desktop.png", "sizes": "1440x900", "type": "image/png", "form_factor": "wide" },
+    { "src": "/icons/screenshot-mobile.png",  "sizes": "390x844",  "type": "image/png", "form_factor": "narrow" }
+  ]
+}

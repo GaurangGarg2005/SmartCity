@@ -1,0 +1,6824 @@
+[
+  {
+    "id": "jiit_noida",
+    "name": "JIIT Noida",
+    "lat": 28.5705,
+    "lon": 77.3219,
+    "type": "education",
+    "address": "Sector 62, Noida, Uttar Pradesh 201309",
+    "weight": 5.0
+  },
+  {
+    "id": "osm_node_5046094719",
+    "name": "Ajaibpur",
+    "lat": 28.472312,
+    "lon": 77.594129,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4165778689",
+    "name": "Alpha 1",
+    "lat": 28.471034,
+    "lon": 77.512737,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_252584508",
+    "name": "Anand Vihar",
+    "lat": 28.649811,
+    "lon": 77.314499,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_2833971686",
+    "name": "Anand Vihar (Blue Line)",
+    "lat": 28.646834,
+    "lon": 77.315875,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6454015469",
+    "name": "Anand Vihar (Pink Line)",
+    "lat": 28.646616,
+    "lon": 77.315532,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_944845341",
+    "name": "Anand Vihar Terminal",
+    "lat": 28.648851,
+    "lon": 77.3155,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_9552724758",
+    "name": "Badhkal Mor",
+    "lat": 28.422713,
+    "lon": 77.310348,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_13450074182",
+    "name": "Bodaki",
+    "lat": 28.507591,
+    "lon": 77.563528,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_7808500442",
+    "name": "Boraki",
+    "lat": 28.507608,
+    "lon": 77.563744,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6537285485",
+    "name": "Botanical Garden (Blue Line)",
+    "lat": 28.563943,
+    "lon": 77.3344,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_2833058750",
+    "name": "Botanical Garden (Magenta Line)",
+    "lat": 28.563905,
+    "lon": 77.333837,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "botanical_garden_metro",
+    "name": "Botanical Garden Metro Station",
+    "lat": 28.5634,
+    "lon": 77.3382,
+    "type": "transit",
+    "address": "Sector 128, Noida, Uttar Pradesh",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_7572622446",
+    "name": "Dadri",
+    "lat": 28.53873,
+    "lon": 77.537219,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4165778690",
+    "name": "Delta 1",
+    "lat": 28.478477,
+    "lon": 77.525731,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4849447792",
+    "name": "Depot Station",
+    "lat": 28.489014,
+    "lon": 77.544009,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4676900933",
+    "name": "East Vinod Nagar - Mayur Vihar - II",
+    "lat": 28.620044,
+    "lon": 77.305407,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_1572649890",
+    "name": "Faridabad",
+    "lat": 28.410762,
+    "lon": 77.307077,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4165778691",
+    "name": "GNIDA Office",
+    "lat": 28.484683,
+    "lon": 77.536504,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "greater_noida_metro",
+    "name": "Greater Noida Depot Metro Station",
+    "lat": 28.4744,
+    "lon": 77.5036,
+    "type": "transit",
+    "address": "Greater Noida, Uttar Pradesh",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4676900918",
+    "name": "IP Extension",
+    "lat": 28.631903,
+    "lon": 77.310718,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_13450074181",
+    "name": "Junpat Village",
+    "lat": 28.495234,
+    "lon": 77.554843,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_2833058718",
+    "name": "Kalindi Kunj",
+    "lat": 28.542916,
+    "lon": 77.310111,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6458130120",
+    "name": "Karkarduma (Blue Line)",
+    "lat": 28.648318,
+    "lon": 77.305518,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_2833971689",
+    "name": "Karkarduma (Pink Line)",
+    "lat": 28.649343,
+    "lon": 77.306069,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4676901224",
+    "name": "Mandawali - West Vinod Nagar",
+    "lat": 28.624979,
+    "lon": 77.304452,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_5045260875",
+    "name": "Maripat",
+    "lat": 28.587566,
+    "lon": 77.495988,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4849443432",
+    "name": "NSEZ",
+    "lat": 28.532404,
+    "lon": 77.394754,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6537196022",
+    "name": "New Ashok Nagar",
+    "lat": 28.589088,
+    "lon": 77.301508,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6537260850",
+    "name": "Noida City Centre",
+    "lat": 28.574733,
+    "lon": 77.356164,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "noida_city_centre_metro",
+    "name": "Noida City Centre Metro Station",
+    "lat": 28.5673,
+    "lon": 77.3191,
+    "type": "transit",
+    "address": "Sector 32, Noida, Uttar Pradesh",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6539894868",
+    "name": "Noida Electronic City",
+    "lat": 28.628263,
+    "lon": 77.375003,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6537268384",
+    "name": "Noida Golf Course",
+    "lat": 28.567376,
+    "lon": 77.346325,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_13451058327",
+    "name": "Noida Office",
+    "lat": 28.545381,
+    "lon": 77.337714,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4950920120",
+    "name": "Noida Sector 101",
+    "lat": 28.556048,
+    "lon": 77.384949,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4267913913",
+    "name": "Noida Sector 137",
+    "lat": 28.510769,
+    "lon": 77.403607,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4165777365",
+    "name": "Noida Sector 143",
+    "lat": 28.494256,
+    "lon": 77.422377,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4165778734",
+    "name": "Noida Sector 144",
+    "lat": 28.486288,
+    "lon": 77.433077,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4678434990",
+    "name": "Noida Sector 145",
+    "lat": 28.478996,
+    "lon": 77.44241,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4678434989",
+    "name": "Noida Sector 146",
+    "lat": 28.468819,
+    "lon": 77.455208,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4165778709",
+    "name": "Noida Sector 147",
+    "lat": 28.459355,
+    "lon": 77.466115,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4165777372",
+    "name": "Noida Sector 148",
+    "lat": 28.448055,
+    "lon": 77.476604,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6537285488",
+    "name": "Noida Sector 15",
+    "lat": 28.584884,
+    "lon": 77.311612,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6537285487",
+    "name": "Noida Sector 16",
+    "lat": 28.578081,
+    "lon": 77.317778,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6537285486",
+    "name": "Noida Sector 18",
+    "lat": 28.570758,
+    "lon": 77.326076,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6539894867",
+    "name": "Noida Sector 34",
+    "lat": 28.580254,
+    "lon": 77.363492,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_13451058326",
+    "name": "Noida Sector 44",
+    "lat": 28.551276,
+    "lon": 77.335246,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4950923222",
+    "name": "Noida Sector 51",
+    "lat": 28.585719,
+    "lon": 77.375259,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6539894866",
+    "name": "Noida Sector 52",
+    "lat": 28.586874,
+    "lon": 77.373024,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6539894864",
+    "name": "Noida Sector 59",
+    "lat": 28.606528,
+    "lon": 77.372683,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6539894865",
+    "name": "Noida Sector 61",
+    "lat": 28.597585,
+    "lon": 77.372266,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_6539894863",
+    "name": "Noida Sector 62",
+    "lat": 28.616986,
+    "lon": 77.373588,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_13450364921",
+    "name": "Noida Sector 70",
+    "lat": 28.600735,
+    "lon": 77.383236,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4950923223",
+    "name": "Noida Sector 76",
+    "lat": 28.565331,
+    "lon": 77.379658,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4950923224",
+    "name": "Noida Sector 81",
+    "lat": 28.549299,
+    "lon": 77.389949,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_4267913896",
+    "name": "Noida Sector 83",
+    "lat": 28.522269,
+    "lon": 77.396446,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_2833058715",
+    "name": "Okhla Bird Sanctuary",
+    "lat": 28.552942,
+    "lon": 77.321595,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_10074648933",
+    "name": "Rainbow Metro Station",
+    "lat": 28.574358,
+    "lon": 77.378235,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "sector_18_noida",
+    "name": "Sector 18 Metro Station",
+    "lat": 28.5706,
+    "lon": 77.3214,
+    "type": "transit",
+    "address": "Sector 18, Noida, Uttar Pradesh",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_2833531907",
+    "name": "Trilokpuri Sanjay Lake",
+    "lat": 28.613453,
+    "lon": 77.308855,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_10314380322",
+    "name": "Vaishali",
+    "lat": 28.64967,
+    "lon": 77.339575,
+    "type": "transit",
+    "address": "",
+    "weight": 4.0
+  },
+  {
+    "id": "osm_node_7993500464",
+    "name": "1-2 Block",
+    "lat": 28.542609,
+    "lon": 77.333504,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_1870030560",
+    "name": "ABES engineering college",
+    "lat": 28.633798,
+    "lon": 77.445804,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "amity_univ_noida",
+    "name": "Amity University Noida",
+    "lat": 28.5449,
+    "lon": 77.333,
+    "type": "education",
+    "address": "Sector 125, Noida, Uttar Pradesh",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_11685337161",
+    "name": "Amrita Vishwa Vidyapeetham",
+    "lat": 28.425485,
+    "lon": 77.35747,
+    "type": "education",
+    "address": "RPS City, Faridabad",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_12704710070",
+    "name": "Bal Bhavan Public School",
+    "lat": 28.618799,
+    "lon": 77.302595,
+    "type": "education",
+    "address": "Sh.G.C. Lagan Marg, Delhi",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_13180535715",
+    "name": "Cosmos Public School",
+    "lat": 28.601763,
+    "lon": 77.314529,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_8929322160",
+    "name": "DBSE",
+    "lat": 28.630789,
+    "lon": 77.312138,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "dlf_mall_noida",
+    "name": "DLF Mall of India",
+    "lat": 28.5673,
+    "lon": 77.3215,
+    "type": "mall",
+    "address": "Sector 18, Noida, Uttar Pradesh",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_1153089833",
+    "name": "DPS Indirapuram",
+    "lat": 28.645966,
+    "lon": 77.380036,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_13072249774",
+    "name": "Dr B.R. Ambedkar School of Specialised Excellence (ASOSE), IP Extension",
+    "lat": 28.631551,
+    "lon": 77.314177,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_7993500387",
+    "name": "E-1 Block",
+    "lat": 28.545164,
+    "lon": 77.334364,
+    "type": "education",
+    "address": "Noida",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_7993500388",
+    "name": "E-3 Block",
+    "lat": 28.544335,
+    "lon": 77.333337,
+    "type": "education",
+    "address": "Noida",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_2250232427",
+    "name": "E2- Block",
+    "lat": 28.544583,
+    "lon": 77.333869,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_7993500466",
+    "name": "F-1 Block",
+    "lat": 28.543677,
+    "lon": 77.333049,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_7993500467",
+    "name": "F-2 Block",
+    "lat": 28.543446,
+    "lon": 77.332764,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_7993500468",
+    "name": "F-3 Block",
+    "lat": 28.543135,
+    "lon": 77.332374,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_2133737386",
+    "name": "GBU International Center",
+    "lat": 28.416289,
+    "lon": 77.526127,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_2133737734",
+    "name": "GBU School of Biotechnology",
+    "lat": 28.419161,
+    "lon": 77.521246,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_2069261670",
+    "name": "GBU School of Information, Communication and Technology",
+    "lat": 28.417072,
+    "lon": 77.52347,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_2069261598",
+    "name": "GBU School of Management",
+    "lat": 28.417258,
+    "lon": 77.52225,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_13082006017",
+    "name": "Government Sarvodaya Bal Vidyalaya",
+    "lat": 28.617509,
+    "lon": 77.303396,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_13082006018",
+    "name": "Government Sarvodaya Kanya Vidyalaya",
+    "lat": 28.617363,
+    "lon": 77.303527,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_11211925180",
+    "name": "Government school",
+    "lat": 28.498204,
+    "lon": 77.30461,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_11225077950",
+    "name": "Govt girls senior secondary school no . 3",
+    "lat": 28.494615,
+    "lon": 77.325615,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_13598309846",
+    "name": "Holy Angel Public School",
+    "lat": 28.497586,
+    "lon": 77.31833,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_7993500463",
+    "name": "I-1 Block",
+    "lat": 28.543093,
+    "lon": 77.333679,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_7993500465",
+    "name": "I-3 Block",
+    "lat": 28.542533,
+    "lon": 77.333071,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_13084286758",
+    "name": "Indraprastha Global School",
+    "lat": 28.512614,
+    "lon": 77.389338,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_6498242805",
+    "name": "Indus Valley",
+    "lat": 28.618399,
+    "lon": 77.354619,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_7993500462",
+    "name": "J-1 Block",
+    "lat": 28.544478,
+    "lon": 77.335355,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_8007202199",
+    "name": "J-3 Block",
+    "lat": 28.543446,
+    "lon": 77.334118,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_13061156424",
+    "name": "Jaishankar Memorial Centre",
+    "lat": 28.537949,
+    "lon": 77.300229,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_9587904214",
+    "name": "Janhit Institute of education and information",
+    "lat": 28.467726,
+    "lon": 77.506393,
+    "type": "education",
+    "address": "plot no. 38B, knowledge park-1, pari chowk",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_714378268",
+    "name": "Jaypee Business School, Noida",
+    "lat": 28.629195,
+    "lon": 77.371384,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_714377672",
+    "name": "Jaypee Institute of Information Technology, Noida",
+    "lat": 28.630044,
+    "lon": 77.372082,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_7993500459",
+    "name": "K-1 Block",
+    "lat": 28.545788,
+    "lon": 77.33514,
+    "type": "education",
+    "address": "Noida",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_7993500460",
+    "name": "K-2 Block",
+    "lat": 28.545411,
+    "lon": 77.33596,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_7993500461",
+    "name": "K-3 Block",
+    "lat": 28.54478,
+    "lon": 77.336158,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_11696942375",
+    "name": "KV ground",
+    "lat": 28.589546,
+    "lon": 77.348745,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "knowledge_park_greater_noida",
+    "name": "Knowledge Park II, Greater Noida",
+    "lat": 28.4721,
+    "lon": 77.5035,
+    "type": "education",
+    "address": "Knowledge Park II, Greater Noida, Uttar Pradesh",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_12997284965",
+    "name": "M.S. Tutorial",
+    "lat": 28.644929,
+    "lon": 77.338673,
+    "type": "education",
+    "address": "108",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_12687840624",
+    "name": "Mamta Public School",
+    "lat": 28.600455,
+    "lon": 77.316649,
+    "type": "education",
+    "address": "Vasundhara Enclave",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_14166478175",
+    "name": "Manav Sanskar Public School",
+    "lat": 28.449455,
+    "lon": 77.326442,
+    "type": "education",
+    "address": "D-Block, Dheeraj Nagar Extension, Neharpar, Faridabad, Haryana, Faridabad",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_5401477508",
+    "name": "Modern Delhi International School",
+    "lat": 28.412628,
+    "lon": 77.336116,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_1827530967",
+    "name": "Mohan International School",
+    "lat": 28.613821,
+    "lon": 77.366548,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_11205436531",
+    "name": "Molarband school",
+    "lat": 28.494519,
+    "lon": 77.326009,
+    "type": "education",
+    "address": "Molarband school",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_13076346981",
+    "name": "NIET Old Campus",
+    "lat": 28.4634,
+    "lon": 77.489838,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_8929322159",
+    "name": "National Victor Public School",
+    "lat": 28.631544,
+    "lon": 77.311824,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_11205476274",
+    "name": "New bal vaishali public school",
+    "lat": 28.493018,
+    "lon": 77.326079,
+    "type": "education",
+    "address": "Sai nagar meethapur badarpur new delhi - 110044",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_13072249775",
+    "name": "Rajkiya Pratibha Vikas Vidyalaya ,I.P. Extension",
+    "lat": 28.631558,
+    "lon": 77.314496,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_6395753670",
+    "name": "Rajkiya Sarvodaya Bal Vidyalaya",
+    "lat": 28.613825,
+    "lon": 77.318599,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_9107468200",
+    "name": "Rajkiya Sarvodaya Kanya Vidyalaya (Jeeja Bai)",
+    "lat": 28.614704,
+    "lon": 77.319462,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_1153089458",
+    "name": "Ralli International",
+    "lat": 28.644749,
+    "lon": 77.375608,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_11225078048",
+    "name": "Sarvodaya bal vidyalaya no. 1",
+    "lat": 28.494556,
+    "lon": 77.325649,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_5122054863",
+    "name": "Scottish Early Years",
+    "lat": 28.648973,
+    "lon": 77.300794,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_7835031255",
+    "name": "Sharda University",
+    "lat": 28.473407,
+    "lon": 77.482934,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_5409224807",
+    "name": "Shemrock Little Orchids 2",
+    "lat": 28.384767,
+    "lon": 77.368274,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_3841328720",
+    "name": "St. Peters School",
+    "lat": 28.413978,
+    "lon": 77.313953,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_5409197467",
+    "name": "Tender Heart NGO",
+    "lat": 28.385997,
+    "lon": 77.365867,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_9221656000",
+    "name": "Vaidic Public School",
+    "lat": 28.622454,
+    "lon": 77.311265,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_8929322161",
+    "name": "Vivekanand International School",
+    "lat": 28.6319,
+    "lon": 77.314077,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_4211294504",
+    "name": "echelon",
+    "lat": 28.38727,
+    "lon": 77.444074,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_4211294503",
+    "name": "jbkp",
+    "lat": 28.382982,
+    "lon": 77.450634,
+    "type": "education",
+    "address": "",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_11236474844",
+    "name": "होली पब्लिक स्कूल",
+    "lat": 28.453885,
+    "lon": 77.542921,
+    "type": "education",
+    "address": "HS 28, Sector 42 Sigma 1",
+    "weight": 3.0
+  },
+  {
+    "id": "osm_node_13531366350",
+    "name": "A-Square Mall",
+    "lat": 28.591403,
+    "lon": 77.381255,
+    "type": "mall",
+    "address": "H9RJ+HG8, Sarfabad Village, Sarfabad, Sector 73, Noida",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_5805953527",
+    "name": "Akash  Kumar",
+    "lat": 28.480731,
+    "lon": 77.326479,
+    "type": "mall",
+    "address": "Surya Colony, Sehatpur, Faridabad",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_6334759086",
+    "name": "Banarasi Pan Bhandar",
+    "lat": 28.49211,
+    "lon": 77.318625,
+    "type": "mall",
+    "address": "A3, Sindhu Farm Road",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_14230334029",
+    "name": "Battery on Demand",
+    "lat": 28.461681,
+    "lon": 77.508904,
+    "type": "mall",
+    "address": "shop no 786, RWA, Gurjinder Vihar, Pocket 5, Sector Chi 1, AWHO Phase III, Greater Noida, Greater Noida",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_307369793",
+    "name": "Big Bazaar",
+    "lat": 28.641176,
+    "lon": 77.316841,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_10902542772",
+    "name": "COIFFEUR FASHIONS",
+    "lat": 28.386942,
+    "lon": 77.354473,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_9565146136",
+    "name": "Commercial 1 , Paras Tierea",
+    "lat": 28.507493,
+    "lon": 77.413224,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "fortis_hospital_noida",
+    "name": "Fortis Hospital Noida",
+    "lat": 28.5474,
+    "lon": 77.3562,
+    "type": "hospital",
+    "address": "Sector 62, Noida, Uttar Pradesh",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_13130888460",
+    "name": "Galaxy Shoppe",
+    "lat": 28.619571,
+    "lon": 77.42596,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_11054398266",
+    "name": "Gaur City Center - Retail Shops For Sale",
+    "lat": 28.605421,
+    "lon": 77.427444,
+    "type": "mall",
+    "address": "Gaur City Center, Gaur Chowk, Sector 4, Greater Noida",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_5464299289",
+    "name": "HyperCity",
+    "lat": 28.572386,
+    "lon": 77.388687,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_10902520980",
+    "name": "Jai Mart One Stop Shopping",
+    "lat": 28.387167,
+    "lon": 77.355064,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_1153083951",
+    "name": "Jaipuria Mall",
+    "lat": 28.640747,
+    "lon": 77.378236,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_10902624391",
+    "name": "Liberty Exclusive showroom",
+    "lat": 28.386895,
+    "lon": 77.353164,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_11694585483",
+    "name": "Mahagun Supermarket",
+    "lat": 28.634644,
+    "lon": 77.362173,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_11875621832",
+    "name": "Marks & Spencer",
+    "lat": 28.56797,
+    "lon": 77.320513,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_11697210298",
+    "name": "Modi Mall",
+    "lat": 28.586382,
+    "lon": 77.341096,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_5021284310",
+    "name": "More",
+    "lat": 28.645945,
+    "lon": 77.380779,
+    "type": "mall",
+    "address": "Ghaziabad",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_3316287399",
+    "name": "Needs",
+    "lat": 28.6392,
+    "lon": 77.361569,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_8581463723",
+    "name": "Netwall Expert",
+    "lat": 28.581099,
+    "lon": 77.440096,
+    "type": "mall",
+    "address": "Supertech Eco Village 1, Greater Noida West, Noida Exten",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_1911414964",
+    "name": "Niho Mall",
+    "lat": 28.642515,
+    "lon": 77.383713,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_8042943271",
+    "name": "Organic India",
+    "lat": 28.570286,
+    "lon": 77.325442,
+    "type": "mall",
+    "address": "Shop No. G-03,, Krishna Apra Building Plot No. P-3, Sector 18, Noida, Uttar Pradesh 201301, Noida",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_8042954685",
+    "name": "Organic India Noida",
+    "lat": 28.541016,
+    "lon": 77.366989,
+    "type": "mall",
+    "address": "nside Fabindia Experience Center,, I Starling Mall - Noida Unit 101 First Floor Starling, Hazipur, Sector 104 201304, Noida",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_2069322245",
+    "name": "Pacific Mall",
+    "lat": 28.646306,
+    "lon": 77.320255,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_5464308610",
+    "name": "Pentaloon's",
+    "lat": 28.57232,
+    "lon": 77.388743,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_8146777627",
+    "name": "Pure Ayurveda",
+    "lat": 28.638925,
+    "lon": 77.377343,
+    "type": "mall",
+    "address": "G-81,D mall, Shakti Khand 2, Indirapuram, Ghaziabad, Uttar Pradesh 201014, ghaziabad",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_12895510616",
+    "name": "Reliance Fresh",
+    "lat": 28.510249,
+    "lon": 77.369481,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_6524001848",
+    "name": "Reme Lifestyle",
+    "lat": 28.453076,
+    "lon": 77.526154,
+    "type": "mall",
+    "address": "G-18, The Grand Venice Mall, G-18, Plot No Sh3, Site Iv, Near Pari Chowk, Greater Noida, Uttar Pradesh, Nodia",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_11245413981",
+    "name": "SAYA Status Mall",
+    "lat": 28.511784,
+    "lon": 77.384224,
+    "type": "mall",
+    "address": "C-3A, Jaypee Greens Wish Town, Noida",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_3401845852",
+    "name": "SLF Mall",
+    "lat": 28.455192,
+    "lon": 77.315823,
+    "type": "mall",
+    "address": "SECTOR 30-33, I.P. COLONY, Faridabad",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_3514825952",
+    "name": "SRS Value Bazaar",
+    "lat": 28.579576,
+    "lon": 77.366101,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_11684891252",
+    "name": "Sector 16 Market",
+    "lat": 28.411789,
+    "lon": 77.319914,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_278165390",
+    "name": "Shipra Mall",
+    "lat": 28.633824,
+    "lon": 77.369658,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_1288848503",
+    "name": "Smart Bazaar",
+    "lat": 28.637888,
+    "lon": 77.360427,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_8581440481",
+    "name": "Supertech Eco Mart",
+    "lat": 28.580486,
+    "lon": 77.441372,
+    "type": "mall",
+    "address": "Supertech Eco Mart, Village-1, Noida Exten",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_6776152968",
+    "name": "Supertech Mart",
+    "lat": 28.610201,
+    "lon": 77.441602,
+    "type": "mall",
+    "address": "Greater Noida",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_11696977104",
+    "name": "Value Mart",
+    "lat": 28.414756,
+    "lon": 77.354144,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_7891167861",
+    "name": "Velocity Complex",
+    "lat": 28.590534,
+    "lon": 77.359209,
+    "type": "mall",
+    "address": "Village - Gijhor, Noida",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_9238986007",
+    "name": "Vishal Mega Mart",
+    "lat": 28.621702,
+    "lon": 77.312134,
+    "type": "mall",
+    "address": "",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_4470911895",
+    "name": "stellar jeevan",
+    "lat": 28.565432,
+    "lon": 77.447957,
+    "type": "mall",
+    "address": "stellar jeevan sector 1 greater noida west UP",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_11236475338",
+    "name": "द ग्रैंड वेनिस मॉल",
+    "lat": 28.452634,
+    "lon": 77.526266,
+    "type": "mall",
+    "address": "SH3, Surajpur Site 4",
+    "weight": 2.5
+  },
+  {
+    "id": "osm_node_5405779252",
+    "name": "ANJULI NURSING HOME",
+    "lat": 28.400031,
+    "lon": 77.368855,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_5409224804",
+    "name": "ARSH HOSPITAL",
+    "lat": 28.384775,
+    "lon": 77.36739,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13202970130",
+    "name": "Aam Aadmi Mohallah Clinic",
+    "lat": 28.604809,
+    "lon": 77.332387,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138534377",
+    "name": "Aam Aadmi Polyclinic",
+    "lat": 28.632648,
+    "lon": 77.308463,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7002835676",
+    "name": "Aar Pee Hospital",
+    "lat": 28.42843,
+    "lon": 77.316571,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7025113021",
+    "name": "Aarogya Hospital, Ghaziabad",
+    "lat": 28.648136,
+    "lon": 77.351694,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6997700276",
+    "name": "Aastha Children Hospital",
+    "lat": 28.471777,
+    "lon": 77.311282,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7008457201",
+    "name": "Aastha Eye Centre",
+    "lat": 28.392968,
+    "lon": 77.304056,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13685138049",
+    "name": "Abhishek Pharmacy",
+    "lat": 28.608265,
+    "lon": 77.44411,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11693770621",
+    "name": "Accord Hospital",
+    "lat": 28.399152,
+    "lon": 77.34971,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911817",
+    "name": "Adarsh Clinic",
+    "lat": 28.468153,
+    "lon": 77.300934,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_8266858285",
+    "name": "Aditya Orthopaedics Clinic",
+    "lat": 28.634705,
+    "lon": 77.364149,
+    "type": "hospital",
+    "address": "LG 05, Amrapali Greens Market, Vaibhav Khand 1, Indrapuram, Ghaziabad",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7035704933",
+    "name": "Agarwal Eye and Dental Care Center",
+    "lat": 28.574582,
+    "lon": 77.323497,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11113323432",
+    "name": "Agarwal Polyclinic and Lab",
+    "lat": 28.636718,
+    "lon": 77.304848,
+    "type": "hospital",
+    "address": "9, Madhu Vihar",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911860",
+    "name": "Aggrawal Clinic",
+    "lat": 28.474267,
+    "lon": 77.308767,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6997714609",
+    "name": "Ahuja Hospital and Maternity Home",
+    "lat": 28.412045,
+    "lon": 77.328397,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7028082114",
+    "name": "Ajit Surgical and Maternity Centre",
+    "lat": 28.598242,
+    "lon": 77.33895,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7026309540",
+    "name": "Amar Medical Centre",
+    "lat": 28.578728,
+    "lon": 77.324571,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_5401642227",
+    "name": "Amrita Hospital, Faridabad",
+    "lat": 28.425628,
+    "lon": 77.355425,
+    "type": "hospital",
+    "address": "Faridabad",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6997303645",
+    "name": "Anand Eye Hospital",
+    "lat": 28.426959,
+    "lon": 77.318999,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7944515382",
+    "name": "Anita's clinic",
+    "lat": 28.63604,
+    "lon": 77.375692,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7008806754",
+    "name": "Anuj Hospital",
+    "lat": 28.415977,
+    "lon": 77.320999,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7544955517",
+    "name": "Apex Citi Hospital",
+    "lat": 28.626551,
+    "lon": 77.301948,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7008750192",
+    "name": "Apex Diagnostic and Polyclinic",
+    "lat": 28.394291,
+    "lon": 77.328236,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_10902654483",
+    "name": "Apollo",
+    "lat": 28.415087,
+    "lon": 77.354435,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7030575139",
+    "name": "Apollo Hospitals , Noida",
+    "lat": 28.579475,
+    "lon": 77.3349,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_3316266551",
+    "name": "Apollo Pharmacy",
+    "lat": 28.639222,
+    "lon": 77.36202,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_5200574281",
+    "name": "Aradhya Clinic",
+    "lat": 28.636009,
+    "lon": 77.375687,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_10956661880",
+    "name": "Arihant Ortho & Truma Center",
+    "lat": 28.647968,
+    "lon": 77.368434,
+    "type": "hospital",
+    "address": "Dr B K Jain, 343, Padmana Naidu Marg,Shakti Khand III, Indirapuram, Ghaziabad",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7038356472",
+    "name": "Arogya Clinic",
+    "lat": 28.5321,
+    "lon": 77.386285,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7009225900",
+    "name": "Aruna Ear Nose Throat Head and Neck Hospital",
+    "lat": 28.392651,
+    "lon": 77.302223,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911771",
+    "name": "Arya Clinic",
+    "lat": 28.472242,
+    "lon": 77.311076,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6998006317",
+    "name": "Asha Nursing Home",
+    "lat": 28.387384,
+    "lon": 77.303766,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994541474",
+    "name": "Asian Institute of Medical Sciences",
+    "lat": 28.425943,
+    "lon": 77.300022,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7018564262",
+    "name": "Astha Hospital",
+    "lat": 28.478844,
+    "lon": 77.519714,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7028478538",
+    "name": "Astha Nursing Home",
+    "lat": 28.645472,
+    "lon": 77.421016,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7018939993",
+    "name": "Avantika Hospital",
+    "lat": 28.645553,
+    "lon": 77.371756,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_9122208544",
+    "name": "BLOODSRUS CENTRE OF EXCELLENCE FOR BLOOD DISORDERS",
+    "lat": 28.589193,
+    "lon": 77.301751,
+    "type": "hospital",
+    "address": "Dharamshila Narayana Superspeciality Hospital, Metro Station, Dharamshila marg, Vasundhara Enclave Near Ashok Nagar, Delhi, India",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_9148248865",
+    "name": "Bandil Ortho Care Clinic",
+    "lat": 28.571678,
+    "lon": 77.382238,
+    "type": "hospital",
+    "address": "Shop No 2, Futec Gateway, Plot No 10, Sector no 75, Noida-Delhi, India",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11341232376",
+    "name": "Bhagat medicos",
+    "lat": 28.500749,
+    "lon": 77.313875,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7024796547",
+    "name": "Bhagwati Nursing Home (Pvt) Ltd.",
+    "lat": 28.547238,
+    "lon": 77.545823,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7151275052",
+    "name": "Bharat Hospital",
+    "lat": 28.601216,
+    "lon": 77.373962,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_2084317885",
+    "name": "Bhardwaj Hospital",
+    "lat": 28.566039,
+    "lon": 77.335578,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11224985474",
+    "name": "Binni medicose",
+    "lat": 28.495666,
+    "lon": 77.324755,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7009891156",
+    "name": "Brighton Kavita Hospital",
+    "lat": 28.433984,
+    "lon": 77.320812,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7009224984",
+    "name": "Capital Child and Maternity Centre",
+    "lat": 28.42466,
+    "lon": 77.318543,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7010904771",
+    "name": "Carewell Hospital",
+    "lat": 28.433985,
+    "lon": 77.321124,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7008343520",
+    "name": "Centre For Sight, Faridabad",
+    "lat": 28.4117,
+    "lon": 77.314837,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_9787375559",
+    "name": "Centre for Sight",
+    "lat": 28.647684,
+    "lon": 77.378679,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7010941767",
+    "name": "Chandni Hospital",
+    "lat": 28.416341,
+    "lon": 77.319798,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_12985396101",
+    "name": "Chandralakshmi Hospital",
+    "lat": 28.646055,
+    "lon": 77.340079,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994225720",
+    "name": "Chandrawati Child and Maternity Hospital",
+    "lat": 28.416141,
+    "lon": 77.316302,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13301682621",
+    "name": "Chemist Point",
+    "lat": 28.600878,
+    "lon": 77.316101,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7035025469",
+    "name": "Child Care and Dental Health Centre",
+    "lat": 28.568386,
+    "lon": 77.343352,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7028627331",
+    "name": "Child Medicare Clinic",
+    "lat": 28.567924,
+    "lon": 77.343735,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7038400970",
+    "name": "City Hospital",
+    "lat": 28.596142,
+    "lon": 77.343176,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6993999659",
+    "name": "City Nursing Home - Faridabad",
+    "lat": 28.400227,
+    "lon": 77.314739,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_3514828536",
+    "name": "Cloudnine Hospital",
+    "lat": 28.578748,
+    "lon": 77.366893,
+    "type": "hospital",
+    "address": "C9, Hoshiyarpur, Sector 51, Noida",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7544955502",
+    "name": "Cribs Hospital",
+    "lat": 28.543241,
+    "lon": 77.300456,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138534322",
+    "name": "DGD Mayur Vihar Phase 1",
+    "lat": 28.607737,
+    "lon": 77.301184,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138632223",
+    "name": "DGD Molarband",
+    "lat": 28.500887,
+    "lon": 77.316607,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138632126",
+    "name": "DGD Tajpur",
+    "lat": 28.496223,
+    "lon": 77.310036,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138534415",
+    "name": "DGD Trilokpuri",
+    "lat": 28.61214,
+    "lon": 77.311403,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138534288",
+    "name": "DGD, Himmatpuri",
+    "lat": 28.601665,
+    "lon": 77.307878,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138534421",
+    "name": "DGD, Kalyanpuri",
+    "lat": 28.616698,
+    "lon": 77.318866,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138534311",
+    "name": "DGD, Vasundhara Enclave",
+    "lat": 28.600699,
+    "lon": 77.316796,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13028365345",
+    "name": "DHI Hair Restoration Clinic",
+    "lat": 28.569251,
+    "lon": 77.323958,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7175550656",
+    "name": "Dadri,Sub-District Hospital",
+    "lat": 28.552976,
+    "lon": 77.556564,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11576809450",
+    "name": "Davaindia generic pharmacy",
+    "lat": 28.614106,
+    "lon": 77.345565,
+    "type": "hospital",
+    "address": "334, Thapar Rd, near Electricity Transfermer, near Kallu cement agency, Shiv Vihar, Shital Vihar, Khora Colony, Sector 62, Noida, Uttar Pradesh 201309, Thapar road, noida",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994541451",
+    "name": "Dewan Memorial Eye Hospital",
+    "lat": 28.395608,
+    "lon": 77.305569,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7020945057",
+    "name": "Dhama Clinic",
+    "lat": 28.581148,
+    "lon": 77.363074,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911776",
+    "name": "Dharam Devi Hospital",
+    "lat": 28.425512,
+    "lon": 77.316081,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13197075152",
+    "name": "Dhawan Joint & Bone Care",
+    "lat": 28.580586,
+    "lon": 77.342176,
+    "type": "hospital",
+    "address": "C-1/2, Sector 31, Noida",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7029057182",
+    "name": "Dipakshi Hospital",
+    "lat": 28.587353,
+    "lon": 77.356751,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138534348",
+    "name": "Dispensary, Himmatpuri",
+    "lat": 28.60324,
+    "lon": 77.303379,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7029420523",
+    "name": "Diveeksha Eye clinic",
+    "lat": 28.583099,
+    "lon": 77.335121,
+    "type": "hospital",
+    "address": "E 149,SECTOR 20, SECTOR 20, Noida, Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7031699656",
+    "name": "Dr .Aradhana Kapoor Medicare Centre",
+    "lat": 28.592771,
+    "lon": 77.365076,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7009263589",
+    "name": "Dr Fateh Singh Hospital",
+    "lat": 28.647151,
+    "lon": 77.341297,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_14174170157",
+    "name": "Dr Rupali Gupta",
+    "lat": 28.619957,
+    "lon": 77.426671,
+    "type": "hospital",
+    "address": "Shop no 111, 1st Floor, Mahagun Mart, F 111 West, Greater Noida W Rd, opposite 11th Avenue, Extension, Gaur City 2, Noida, Greater Noida West",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_9144309801",
+    "name": "Dr Sandeep Nagar Shardha Hospital",
+    "lat": 28.474259,
+    "lon": 77.48225,
+    "type": "hospital",
+    "address": "Sharada Hospital Plot No. 32-34, Knowledge Park III, Greater Noida,Uttar Pradesh, India",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_10956709241",
+    "name": "Dr Sanyam Jain's Spine Cure Clinic",
+    "lat": 28.6394,
+    "lon": 77.360207,
+    "type": "hospital",
+    "address": "A 211 2nd floor, Rajhans plaza Near aditya mall, Indirapuram, Ghaziabad",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13887018882",
+    "name": "Dr Sarita Jaiswal",
+    "lat": 28.602665,
+    "lon": 77.31408,
+    "type": "hospital",
+    "address": "Metro Station, Dharamshila Rd, near Ashok Nagar, Vasundhara Enclave, New Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_14048290236",
+    "name": "Dr. Alokik Gupta",
+    "lat": 28.432842,
+    "lon": 77.315738,
+    "type": "hospital",
+    "address": "Sector 28,, Faridabad",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_5914729083",
+    "name": "Dr. Bhimrao Ambedkar Multispeciality Hospital",
+    "lat": 28.576653,
+    "lon": 77.337688,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6991414738",
+    "name": "Dr. Jain's Clinic and Nursing Home",
+    "lat": 28.393445,
+    "lon": 77.302232,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7003295272",
+    "name": "Dr. Mehta Eye Care Hospital",
+    "lat": 28.395348,
+    "lon": 77.305416,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6997317738",
+    "name": "Dr. Nayyar's Hospital",
+    "lat": 28.397979,
+    "lon": 77.30687,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911809",
+    "name": "Dr. Nipun Bajaj Best Spine & Orthopaedic Surgeon",
+    "lat": 28.41369,
+    "lon": 77.322333,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7024811606",
+    "name": "Dr. Rani Ghai Hospital Pvt. Ltd.",
+    "lat": 28.643908,
+    "lon": 77.427218,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7018562712",
+    "name": "Dr. Ranjan's Gynae and Eye Clinic",
+    "lat": 28.637161,
+    "lon": 77.335627,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13462624125",
+    "name": "Dr. Shreya Shivangi (MDS)",
+    "lat": 28.565974,
+    "lon": 77.398423,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_3824723605",
+    "name": "Dr. Shweta Nihalani ( Dentist in Indirapuram)",
+    "lat": 28.639306,
+    "lon": 77.360559,
+    "type": "hospital",
+    "address": "A-102, Ahinsa Khand-1, Dr. Sushila Naiyar Marg, Indirapuram",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7008343544",
+    "name": "Dr.Dilip Hospital",
+    "lat": 28.432132,
+    "lon": 77.319126,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7029082801",
+    "name": "Dr.Rajeev Hospital",
+    "lat": 28.547267,
+    "lon": 77.546021,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027531400",
+    "name": "Drishti Eye Care",
+    "lat": 28.644133,
+    "lon": 77.341811,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7007875943",
+    "name": "Drishti Eye Centre, Faridabad",
+    "lat": 28.395632,
+    "lon": 77.306596,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7025501307",
+    "name": "Durga Hospital",
+    "lat": 28.546873,
+    "lon": 77.546133,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7035396480",
+    "name": "Eternity Hospital",
+    "lat": 28.641522,
+    "lon": 77.362283,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994223828",
+    "name": "Eye Care Centre",
+    "lat": 28.389885,
+    "lon": 77.328134,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6993960768",
+    "name": "Eye Care Centre Dr. Bharti Gupta",
+    "lat": 28.392944,
+    "lon": 77.302181,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_4258202994",
+    "name": "Eye7 Chaudhary Eye Centre",
+    "lat": 28.639524,
+    "lon": 77.373357,
+    "type": "hospital",
+    "address": "Doctor Sushila Naiyar Marg, Ghaziabad",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_12997288857",
+    "name": "Family Care Medicos",
+    "lat": 28.64491,
+    "lon": 77.338722,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7026264222",
+    "name": "Family Medicare",
+    "lat": 28.601375,
+    "lon": 77.378306,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7544955482",
+    "name": "Faraz Hospital",
+    "lat": 28.546488,
+    "lon": 77.300575,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994021412",
+    "name": "Faridabad City Hospital and Pilex",
+    "lat": 28.392697,
+    "lon": 77.304145,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7009362524",
+    "name": "Faridabad Eye Care Centre",
+    "lat": 28.399136,
+    "lon": 77.316021,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_9553991981",
+    "name": "Felix Hospital",
+    "lat": 28.505927,
+    "lon": 77.40855,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6997212527",
+    "name": "Friends Ear Nose Throat Centre",
+    "lat": 28.391228,
+    "lon": 77.305453,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027932218",
+    "name": "Friends Eye and Child Care Clinic",
+    "lat": 28.574138,
+    "lon": 77.321795,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11113323429",
+    "name": "GACSS Pharmarcy",
+    "lat": 28.636733,
+    "lon": 77.304862,
+    "type": "hospital",
+    "address": "9;10, Indraprastha Extension, Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11953844745",
+    "name": "Ganpati Chemist Cosmetic Opticals",
+    "lat": 28.599696,
+    "lon": 77.317637,
+    "type": "hospital",
+    "address": "New Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027683547",
+    "name": "Ganpati Hospitaland Maternity Centre",
+    "lat": 28.542987,
+    "lon": 77.385721,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7026679195",
+    "name": "Garims Nursing Home Pvt Ltd",
+    "lat": 28.579977,
+    "lon": 77.34218,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994292520",
+    "name": "Geeta Hospital",
+    "lat": 28.436299,
+    "lon": 77.314479,
+    "type": "hospital",
+    "address": "Faridabad, Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_12997331780",
+    "name": "Good Will Medicos",
+    "lat": 28.644621,
+    "lon": 77.338829,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911808",
+    "name": "Gopal Bhawan Charitable Clinic",
+    "lat": 28.48197,
+    "lon": 77.313886,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7020925951",
+    "name": "Government District Hospital, Gautam Buddha Nagar",
+    "lat": 28.577007,
+    "lon": 77.339473,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7177771026",
+    "name": "Government Hospital,Dujana",
+    "lat": 28.622719,
+    "lon": 77.509977,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7008343538",
+    "name": "Goyal's Nursing Home",
+    "lat": 28.416236,
+    "lon": 77.326299,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7019184671",
+    "name": "Green City Hospital",
+    "lat": 28.483704,
+    "lon": 77.526978,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994024463",
+    "name": "Gupta Nursing Home, Faridabad",
+    "lat": 28.415923,
+    "lon": 77.312647,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911790",
+    "name": "Gupta Ortho and Physio Clinic",
+    "lat": 28.473572,
+    "lon": 77.311619,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_10050577770",
+    "name": "HOD Faridabad - House Of Diagnostics",
+    "lat": 28.387505,
+    "lon": 77.307466,
+    "type": "hospital",
+    "address": "Plot No 55, Neelam Bata Road, Faridabad",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_10049931203",
+    "name": "HOD Karkardooma - House Of Diagnostics",
+    "lat": 28.647094,
+    "lon": 77.3021,
+    "type": "hospital",
+    "address": "15, Hargovind Enclave, Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911791",
+    "name": "Healing Touch Mediclinic",
+    "lat": 28.480687,
+    "lon": 77.311169,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13028340139",
+    "name": "Hear Clear",
+    "lat": 28.570942,
+    "lon": 77.324075,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11581275761",
+    "name": "IP Heart Care Clinic",
+    "lat": 28.636163,
+    "lon": 77.304472,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7025153786",
+    "name": "Icare Eye Hospital And Post Graduate Institute Glaucoma Research Centre",
+    "lat": 28.579952,
+    "lon": 77.335509,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7037320325",
+    "name": "Indo Gulf Hospital & Diagnostics",
+    "lat": 28.577188,
+    "lon": 77.327244,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027842413",
+    "name": "J S Tomar Memorial Hospital Pvt. Ltd. - Noida",
+    "lat": 28.511951,
+    "lon": 77.375896,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911812",
+    "name": "JN Clinic",
+    "lat": 28.473246,
+    "lon": 77.310809,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7021257105",
+    "name": "Jain Clinic",
+    "lat": 28.592858,
+    "lon": 77.338965,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11569376996",
+    "name": "Jan Aushadhi",
+    "lat": 28.648419,
+    "lon": 77.443752,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7031006667",
+    "name": "Jeevan Jyoti Hospital and Diagnostic Centre",
+    "lat": 28.64698,
+    "lon": 77.412488,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027718160",
+    "name": "Jeevanlok Hospital",
+    "lat": 28.646173,
+    "lon": 77.415755,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7010761022",
+    "name": "Jeewan Jyoti Hospital, Faridabad",
+    "lat": 28.402027,
+    "lon": 77.324825,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7008485951",
+    "name": "Jindal Nursing Home (D)",
+    "lat": 28.416331,
+    "lon": 77.311939,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6997058111",
+    "name": "K.P. Heart and Skin Centre",
+    "lat": 28.397089,
+    "lon": 77.305732,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7813122579",
+    "name": "Kailash Chemists",
+    "lat": 28.628125,
+    "lon": 77.308688,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_915724540",
+    "name": "Kailash Hospital & Heart Institute",
+    "lat": 28.577404,
+    "lon": 77.331414,
+    "type": "hospital",
+    "address": "H-33, Sector 27, Noida, Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7041732177",
+    "name": "Kailash Hospital Greater Noida",
+    "lat": 28.470777,
+    "lon": 77.50535,
+    "type": "hospital",
+    "address": "Plot No 23, near Pari Chowk, Knowledge Park I, Greater Noida",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7018342608",
+    "name": "Kailash Institute Of Naturopathy Ayurveda And Yoga",
+    "lat": 28.470364,
+    "lon": 77.50514,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7024933937",
+    "name": "Kalawati Memorial Clinic",
+    "lat": 28.637437,
+    "lon": 77.353218,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6997786605",
+    "name": "Kalra Child Care Centre",
+    "lat": 28.392132,
+    "lon": 77.319902,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7038608967",
+    "name": "Kamal Hospital, Ghaziabad",
+    "lat": 28.644685,
+    "lon": 77.325394,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027932229",
+    "name": "Kanika Medical and Surgical Clinic",
+    "lat": 28.594659,
+    "lon": 77.332513,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13028342751",
+    "name": "Kaya Skin Clinic",
+    "lat": 28.570739,
+    "lon": 77.32406,
+    "type": "hospital",
+    "address": "Noida",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13684975664",
+    "name": "Krishna Medicos",
+    "lat": 28.597105,
+    "lon": 77.337452,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911799",
+    "name": "Kumar Diagnostic Centre",
+    "lat": 28.469973,
+    "lon": 77.311799,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7002913051",
+    "name": "Kumar Medical Park",
+    "lat": 28.380895,
+    "lon": 77.314259,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7544955476",
+    "name": "L.D. Hospital",
+    "lat": 28.500402,
+    "lon": 77.32328,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7001623653",
+    "name": "Lal Nursing Home",
+    "lat": 28.416229,
+    "lon": 77.318328,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911827",
+    "name": "Lala Diwan Chand Charitable Hospital",
+    "lat": 28.480454,
+    "lon": 77.314365,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7025501342",
+    "name": "Life Care Hospital, Gautam Buddha Nagar",
+    "lat": 28.593547,
+    "lon": 77.370143,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_12909378921",
+    "name": "Life Line Medicos",
+    "lat": 28.597968,
+    "lon": 77.335396,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7010339325",
+    "name": "Lohan Children Hospital",
+    "lat": 28.401332,
+    "lon": 77.305826,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027683546",
+    "name": "M B Lal Memorial Clinic Pvt Ltd",
+    "lat": 28.572229,
+    "lon": 77.350503,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138534373",
+    "name": "Mahesh Hospital",
+    "lat": 28.626454,
+    "lon": 77.302336,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027732245",
+    "name": "Maheshwari Clinic",
+    "lat": 28.526572,
+    "lon": 77.375528,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11559662593",
+    "name": "Mahi Medical Store",
+    "lat": 28.646718,
+    "lon": 77.444312,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_9111080043",
+    "name": "Malhotra Clinic",
+    "lat": 28.634961,
+    "lon": 77.304156,
+    "type": "hospital",
+    "address": "A-131",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138534366",
+    "name": "Malhotra Nursing Home",
+    "lat": 28.619799,
+    "lon": 77.30391,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138534388",
+    "name": "Malik Nursing Home",
+    "lat": 28.609447,
+    "lon": 77.33437,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7028295447",
+    "name": "Manvi Womens Clinic",
+    "lat": 28.57521,
+    "lon": 77.324415,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11684850879",
+    "name": "Marengo Asia Hospitals",
+    "lat": 28.415366,
+    "lon": 77.319,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7035500016",
+    "name": "Mata Kaushalya Clinic and Physiotherapy Centre",
+    "lat": 28.613707,
+    "lon": 77.351921,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7030406299",
+    "name": "Max Hospital",
+    "lat": 28.574209,
+    "lon": 77.322998,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_8266909244",
+    "name": "Max Superspeciality Hospital",
+    "lat": 28.634614,
+    "lon": 77.333023,
+    "type": "hospital",
+    "address": "W-3, Near Radisson Blu Hotel, Sector 1, Vaishali, Ghaziabad",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11648442674",
+    "name": "MediServe",
+    "lat": 28.590446,
+    "lon": 77.397855,
+    "type": "hospital",
+    "address": "CM 21, Sector 122, Noida",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11932509027",
+    "name": "Medical Mantra Multispeciality Clinic & Diagnostic centre",
+    "lat": 28.641715,
+    "lon": 77.372064,
+    "type": "hospital",
+    "address": "Plot no 477, Ground Floor, near Patanjali store, opposite to SHIPRA SRISHTI, Niti Khand 2, Indirapuram",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7010339320",
+    "name": "Medicheck Hospital",
+    "lat": 28.381016,
+    "lon": 77.301941,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7025849063",
+    "name": "Meenakshi Hospital, Ghaziabad",
+    "lat": 28.642142,
+    "lon": 77.325715,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6993763344",
+    "name": "Meera Devi Nursing Home",
+    "lat": 28.383462,
+    "lon": 77.303571,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7034910550",
+    "name": "Meera Medi Care",
+    "lat": 28.599481,
+    "lon": 77.349179,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027683571",
+    "name": "Mehta Clinic",
+    "lat": 28.560176,
+    "lon": 77.370295,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911824",
+    "name": "Memorial Poly Clinic",
+    "lat": 28.474392,
+    "lon": 77.307676,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_12897313095",
+    "name": "Metro Heart Institute",
+    "lat": 28.597365,
+    "lon": 77.33789,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7028292035",
+    "name": "Metro Heart Institute and Metro Multi Speciality Hospital",
+    "lat": 28.597407,
+    "lon": 77.336034,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7035451664",
+    "name": "Metro Hospitals and Heart Institute (Cardiology Wing)",
+    "lat": 28.59739,
+    "lon": 77.337947,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_12897313097",
+    "name": "Metro Multi-speciality Hospital",
+    "lat": 28.597479,
+    "lon": 77.33587,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911825",
+    "name": "Midas Clinic",
+    "lat": 28.479773,
+    "lon": 77.311488,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994071021",
+    "name": "Mittal Hospital, Faridabad",
+    "lat": 28.408804,
+    "lon": 77.323802,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027732213",
+    "name": "Mohan Swarup Hospital (Badalpur Charity Trust)",
+    "lat": 28.566876,
+    "lon": 77.54112,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911847",
+    "name": "My Eye Clinic",
+    "lat": 28.462097,
+    "lon": 77.302164,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_8261388605",
+    "name": "NARAYAN'S ORTHOPAEDIC CLINIC",
+    "lat": 28.575597,
+    "lon": 77.365492,
+    "type": "hospital",
+    "address": "A-72, Sector 50, Landmark, Inside Raghupati Nursing Home, Noida",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_1827509706",
+    "name": "NMC Hospital",
+    "lat": 28.572925,
+    "lon": 77.340299,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_12595031886",
+    "name": "Nagaji Homoeo Pharmacy",
+    "lat": 28.563904,
+    "lon": 77.389674,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7007523132",
+    "name": "Nanda Nursing Home",
+    "lat": 28.39923,
+    "lon": 77.326059,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911844",
+    "name": "Nav Jeevan Clinic",
+    "lat": 28.417022,
+    "lon": 77.320188,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7025223746",
+    "name": "Navin Hospital, Dadri",
+    "lat": 28.549821,
+    "lon": 77.549987,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7025223747",
+    "name": "Navin Hospital, Noida",
+    "lat": 28.477538,
+    "lon": 77.518637,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7009225889",
+    "name": "Nayanjyoti Eye and Laser Centre",
+    "lat": 28.383186,
+    "lon": 77.300478,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_1743184050",
+    "name": "Neelkanth",
+    "lat": 28.641765,
+    "lon": 77.379407,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7008801827",
+    "name": "New Medicare Centre",
+    "lat": 28.42859,
+    "lon": 77.319036,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7028455910",
+    "name": "Nidaan Nursing Home",
+    "lat": 28.639513,
+    "lon": 77.345653,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7037431047",
+    "name": "Nimt Hospital",
+    "lat": 28.467246,
+    "lon": 77.508376,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_9996569021",
+    "name": "Noida Pain Management Clinic",
+    "lat": 28.574077,
+    "lon": 77.395137,
+    "type": "hospital",
+    "address": "WP 01, Sector 117,Uttar Pradesh, India, Noida",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_2201187724",
+    "name": "Ojjus Hospital",
+    "lat": 28.56549,
+    "lon": 77.359524,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7025643254",
+    "name": "Om Arpan Nursing Home",
+    "lat": 28.614273,
+    "lon": 77.352265,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7035230160",
+    "name": "Om Hospital, Gautam Buddha Nagar",
+    "lat": 28.605425,
+    "lon": 77.379643,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_9104120006",
+    "name": "Om Prem Charitable Hospital",
+    "lat": 28.631745,
+    "lon": 77.349875,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911814",
+    "name": "Ortho Grace Clinic",
+    "lat": 28.417255,
+    "lon": 77.319809,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_12986009477",
+    "name": "Paras Hospital",
+    "lat": 28.647194,
+    "lon": 77.344641,
+    "type": "hospital",
+    "address": "130, Sector 4, Vaishali",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7003021987",
+    "name": "Parijat Hospital, Faridabad",
+    "lat": 28.442974,
+    "lon": 77.304315,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_8266759426",
+    "name": "Platinum Orthopedic & Diagnostic Center",
+    "lat": 28.636216,
+    "lon": 77.360457,
+    "type": "hospital",
+    "address": "2nd Floor, Gc 204, Aditya Gold Crest , Above Nathu Sweets, Vaibhav Khand, Indirapuram, Ghaziabad",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11575886671",
+    "name": "Pradhan Mantri Bharatiya Jan Aushadhi Kendra",
+    "lat": 28.637447,
+    "lon": 77.304149,
+    "type": "hospital",
+    "address": "7",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7019086898",
+    "name": "Pragya Clinic, Gautam Buddha Nagar",
+    "lat": 28.563642,
+    "lon": 77.358742,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_300138103",
+    "name": "Prakash Hospital Pvt Ltd",
+    "lat": 28.585488,
+    "lon": 77.349403,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7018026497",
+    "name": "Prem Clinic",
+    "lat": 28.425426,
+    "lon": 77.321406,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_3401875015",
+    "name": "Prime Hospital & Ortho Centre",
+    "lat": 28.444711,
+    "lon": 77.318598,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7034914349",
+    "name": "Pulse Medicare",
+    "lat": 28.640568,
+    "lon": 77.341282,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911803",
+    "name": "Qrg Hospital",
+    "lat": 28.416267,
+    "lon": 77.318955,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7025481517",
+    "name": "R K Medicare",
+    "lat": 28.626779,
+    "lon": 77.348394,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7036395614",
+    "name": "R.N. Clinic",
+    "lat": 28.539414,
+    "lon": 77.389175,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7024843272",
+    "name": "R.N. Hospital",
+    "lat": 28.614177,
+    "lon": 77.352209,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6998114425",
+    "name": "RG Stone Urology and Laparoscopy Hospital, Faridabad",
+    "lat": 28.38796,
+    "lon": 77.305977,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138534363",
+    "name": "Raj Rani Hospital",
+    "lat": 28.613836,
+    "lon": 77.323398,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_2084319643",
+    "name": "Religare Wellness",
+    "lat": 28.566015,
+    "lon": 77.335627,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_9653198725",
+    "name": "Rheuma Clinic",
+    "lat": 28.639649,
+    "lon": 77.360778,
+    "type": "hospital",
+    "address": "The Surgicare, 109A, 1st floor Rajhans Plaza, Kala pathar road Opposite Aditya mega mall, Ahinsa Khand 1, Indirapuram, Uttar Pradesh, India, Ghaziabad",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13681599960",
+    "name": "Rise Vet clinic",
+    "lat": 28.609172,
+    "lon": 77.437672,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7033315108",
+    "name": "Rohitash Clinic",
+    "lat": 28.594766,
+    "lon": 77.342567,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7018342656",
+    "name": "Roshan Hospital",
+    "lat": 28.490547,
+    "lon": 77.510008,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994402152",
+    "name": "Royal Multispeciality Hospital",
+    "lat": 28.394746,
+    "lon": 77.300309,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138632170",
+    "name": "SPUHC Abul Fazal",
+    "lat": 28.550179,
+    "lon": 77.300522,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138534290",
+    "name": "SPUHC, Ghazipur",
+    "lat": 28.630857,
+    "lon": 77.319763,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7008518339",
+    "name": "Sachdeva Nursing Home, Faridabad",
+    "lat": 28.396846,
+    "lon": 77.305724,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911794",
+    "name": "Sachdeva Orthopaedic Centre",
+    "lat": 28.472391,
+    "lon": 77.310505,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7000653124",
+    "name": "Sakthi Kerala Ayurvedic Treatment Centre",
+    "lat": 28.416285,
+    "lon": 77.311239,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994369381",
+    "name": "Salona's Dental Care",
+    "lat": 28.393454,
+    "lon": 77.315323,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7025911011",
+    "name": "Sangal Eye Clinic",
+    "lat": 28.573252,
+    "lon": 77.321882,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7138534434",
+    "name": "Sankhwar Hospital",
+    "lat": 28.615129,
+    "lon": 77.323799,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994180800",
+    "name": "Sanskar Hospital",
+    "lat": 28.471501,
+    "lon": 77.320493,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7039972813",
+    "name": "Sanskriti Clinic",
+    "lat": 28.599407,
+    "lon": 77.348833,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7031530453",
+    "name": "Santosh Medical and Dental College Hospitals",
+    "lat": 28.648808,
+    "lon": 77.408504,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_9103840592",
+    "name": "Santoshi Medicos",
+    "lat": 28.637392,
+    "lon": 77.369458,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027903595",
+    "name": "Saras Health Care Pvt Ltd",
+    "lat": 28.644829,
+    "lon": 77.40926,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6991430266",
+    "name": "Saras Hospital",
+    "lat": 28.487198,
+    "lon": 77.312451,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027932255",
+    "name": "Sarvodaya Hospital and Trauma Centre",
+    "lat": 28.644951,
+    "lon": 77.339115,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6997700219",
+    "name": "Seva Samiti Charitable Hospital and Research Centre",
+    "lat": 28.381555,
+    "lon": 77.300652,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6997303630",
+    "name": "Shankar Clinic",
+    "lat": 28.399018,
+    "lon": 77.351882,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_1738096147",
+    "name": "Shanti Gopal Hospital",
+    "lat": 28.641822,
+    "lon": 77.379267,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994500905",
+    "name": "Sharma Nursing Home, Faridabad",
+    "lat": 28.401284,
+    "lon": 77.306415,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027783655",
+    "name": "Sharp Sight Centre, Indirapuram",
+    "lat": 28.636284,
+    "lon": 77.360706,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7024906932",
+    "name": "Shiv Clinic, Gautam Buddha Nagar",
+    "lat": 28.543475,
+    "lon": 77.385347,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994292521",
+    "name": "Shivalik Hospital, Faridabad",
+    "lat": 28.479953,
+    "lon": 77.311038,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911829",
+    "name": "Shivam Clinic",
+    "lat": 28.468917,
+    "lon": 77.301341,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027933698",
+    "name": "Shivam Hospital, Gautam Buddha Nagar",
+    "lat": 28.609889,
+    "lon": 77.346725,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_6994191504",
+    "name": "Shivmani Hospital",
+    "lat": 28.393603,
+    "lon": 77.304723,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7035164731",
+    "name": "Shree Tilak Hospital and Trauma Hospital",
+    "lat": 28.642917,
+    "lon": 77.416405,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13681599962",
+    "name": "Shri PM Modi Janaushadi Kendra",
+    "lat": 28.609109,
+    "lon": 77.437859,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13195826650",
+    "name": "Suhani Clinic",
+    "lat": 28.60013,
+    "lon": 77.317677,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911789",
+    "name": "Sumita Clinic",
+    "lat": 28.474424,
+    "lon": 77.307322,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_308730337",
+    "name": "Sumitra Hospital",
+    "lat": 28.581866,
+    "lon": 77.352909,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7026098027",
+    "name": "Sumitra Nursing Home, Gautam Buddha Nagar",
+    "lat": 28.580973,
+    "lon": 77.353446,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7544955438",
+    "name": "Sunrise Healthcare Centre",
+    "lat": 28.545241,
+    "lon": 77.300192,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_8311261509",
+    "name": "Supertech Medicare Tower B2",
+    "lat": 28.609911,
+    "lon": 77.441714,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7030926269",
+    "name": "Surbhi Hospital",
+    "lat": 28.579231,
+    "lon": 77.361174,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911793",
+    "name": "Surya ENT and Surgical Centre",
+    "lat": 28.469866,
+    "lon": 77.311203,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7000653135",
+    "name": "Surya Ortho And Trauma Centre",
+    "lat": 28.393087,
+    "lon": 77.304015,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911787",
+    "name": "Swastik Physiotherapy Clinic",
+    "lat": 28.469556,
+    "lon": 77.31148,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7018342533",
+    "name": "Tanvi Clinic And Diagnostic",
+    "lat": 28.541767,
+    "lon": 77.387651,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7544955467",
+    "name": "Taravati Hospital",
+    "lat": 28.628851,
+    "lon": 77.300537,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027606290",
+    "name": "Tewari Eye Centre, Vaishali",
+    "lat": 28.64634,
+    "lon": 77.34706,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_12041165951",
+    "name": "The Brain Blossom Clinic",
+    "lat": 28.40474,
+    "lon": 77.32033,
+    "type": "hospital",
+    "address": "H.No. 331, 1st Floor, Sec-16, Opposite of K.L. Mehta Dayanand School, Faridabad",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7608911815",
+    "name": "Thukral ENT Clinic",
+    "lat": 28.41565,
+    "lon": 77.319837,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7025501343",
+    "name": "Tirupati Eye Center",
+    "lat": 28.587435,
+    "lon": 77.357077,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7035540138",
+    "name": "Tripathi Hospital, Gautam Buddha Nagar",
+    "lat": 28.586886,
+    "lon": 77.400903,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7030633268",
+    "name": "Uttam Hospital",
+    "lat": 28.645208,
+    "lon": 77.422169,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7037813514",
+    "name": "Vaishali Health Clinic",
+    "lat": 28.637618,
+    "lon": 77.338555,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7001557336",
+    "name": "Valencia Emergency and Criti Care",
+    "lat": 28.480288,
+    "lon": 77.314326,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13624819434",
+    "name": "Vedansh Super Specaility Hospital",
+    "lat": 28.544259,
+    "lon": 77.540924,
+    "type": "hospital",
+    "address": "Rail Way Road, Dadri Road, Dadri",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7001983614",
+    "name": "Veero Devi Memorial Orthopaedic And Trauma Centre",
+    "lat": 28.397087,
+    "lon": 77.306832,
+    "type": "hospital",
+    "address": "Haryana",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7030861892",
+    "name": "Vidya Hospital, Gautam Buddha Nagar",
+    "lat": 28.54599,
+    "lon": 77.544807,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_1355999060",
+    "name": "Vikas Mediacl Store",
+    "lat": 28.640874,
+    "lon": 77.320478,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7027392185",
+    "name": "Vinayak Hospital",
+    "lat": 28.571196,
+    "lon": 77.328089,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7544955481",
+    "name": "Virmani Hospital",
+    "lat": 28.619588,
+    "lon": 77.301257,
+    "type": "hospital",
+    "address": "Delhi",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7035159301",
+    "name": "Wadhawan's Orthopaedic and Medical Centre - Noida",
+    "lat": 28.583011,
+    "lon": 77.354657,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13301671969",
+    "name": "Wellcare Pharmacy",
+    "lat": 28.600938,
+    "lon": 77.316313,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_1355998753",
+    "name": "Yashoda Super Speciality Hospital, Anand Vihar",
+    "lat": 28.645093,
+    "lon": 77.328754,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13503029401",
+    "name": "Yashodha Medicity",
+    "lat": 28.646445,
+    "lon": 77.378494,
+    "type": "hospital",
+    "address": "Shaheed captain Manoj Pandey Marg",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7020925886",
+    "name": "Yatharth Hospital, Gautam Buddha Nagar",
+    "lat": 28.532179,
+    "lon": 77.384381,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_7031485835",
+    "name": "Yatharth Wellness Hospital and Trauma Centre",
+    "lat": 28.451711,
+    "lon": 77.509666,
+    "type": "hospital",
+    "address": "Uttar Pradesh",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_13685027991",
+    "name": "medimart pharmacy",
+    "lat": 28.608278,
+    "lon": 77.444043,
+    "type": "hospital",
+    "address": "",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_11236561139",
+    "name": "फोर्टिस हॉस्पिटल",
+    "lat": 28.449068,
+    "lon": 77.532191,
+    "type": "hospital",
+    "address": "Sector 31 D Block Road",
+    "weight": 2.0
+  },
+  {
+    "id": "osm_node_1833008506",
+    "name": "Arjondi",
+    "lat": 28.396639,
+    "lon": 77.31648,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_4373395277",
+    "name": "Asha Pushp Vihar",
+    "lat": 28.635046,
+    "lon": 77.327322,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_1832855618",
+    "name": "Baba Nagar",
+    "lat": 28.419982,
+    "lon": 77.313978,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_939234829",
+    "name": "Badarpur",
+    "lat": 28.49421,
+    "lon": 77.306863,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_9093894577",
+    "name": "Chhota Hasanpur",
+    "lat": 28.63384,
+    "lon": 77.30698,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_7835031259",
+    "name": "Chilla",
+    "lat": 28.584726,
+    "lon": 77.302187,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_1827509705",
+    "name": "D Block Market, Sector 30, Noida",
+    "lat": 28.572386,
+    "lon": 77.341005,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_4012472257",
+    "name": "Daulat Ram Colony",
+    "lat": 28.545226,
+    "lon": 77.536993,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_1832884989",
+    "name": "Daulatabad",
+    "lat": 28.414431,
+    "lon": 77.315213,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_2809312965",
+    "name": "East Vinod Nagar",
+    "lat": 28.622766,
+    "lon": 77.307503,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_5409153317",
+    "name": "Faridpur",
+    "lat": 28.381982,
+    "lon": 77.376747,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_1832442148",
+    "name": "Fatehpur Chandela",
+    "lat": 28.415345,
+    "lon": 77.302519,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_13040541863",
+    "name": "Gaur City",
+    "lat": 28.610479,
+    "lon": 77.425433,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_13040514019",
+    "name": "Gaur City 2",
+    "lat": 28.61902,
+    "lon": 77.42336,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_10815276311",
+    "name": "Gharoli",
+    "lat": 28.616586,
+    "lon": 77.331991,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_10815276312",
+    "name": "Ghazipur",
+    "lat": 28.630261,
+    "lon": 77.320318,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_10815246195",
+    "name": "Harola",
+    "lat": 28.587612,
+    "lon": 77.319009,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_10815246198",
+    "name": "Indraprastha Extension",
+    "lat": 28.630524,
+    "lon": 77.306757,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_3068190281",
+    "name": "JP Greens",
+    "lat": 28.46658,
+    "lon": 77.516382,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_10815172176",
+    "name": "Kalyan Puri",
+    "lat": 28.615927,
+    "lon": 77.317636,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_944844783",
+    "name": "Kaushambi",
+    "lat": 28.642348,
+    "lon": 77.32264,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_10811811034",
+    "name": "Khora",
+    "lat": 28.626249,
+    "lon": 77.346582,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_7835031257",
+    "name": "Knowledge Park III",
+    "lat": 28.47852,
+    "lon": 77.481436,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_1834635450",
+    "name": "Krishna Nagar",
+    "lat": 28.386394,
+    "lon": 77.310603,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_2716596288",
+    "name": "Madanpur Khadar",
+    "lat": 28.53493,
+    "lon": 77.300518,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_13040542248",
+    "name": "Mahagun Mywoods",
+    "lat": 28.621375,
+    "lon": 77.427239,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_853665802",
+    "name": "Mamura",
+    "lat": 28.603619,
+    "lon": 77.375488,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_944889181",
+    "name": "Mayur Vihar II",
+    "lat": 28.618529,
+    "lon": 77.302658,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_13243189553",
+    "name": "Mayur Vihar Phase 1 Pocket 2",
+    "lat": 28.610197,
+    "lon": 77.300695,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_1832340877",
+    "name": "Mewala Maharajpur",
+    "lat": 28.441875,
+    "lon": 77.3023,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_836394108",
+    "name": "Nithari",
+    "lat": 28.576213,
+    "lon": 77.342223,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_1832855622",
+    "name": "Old Faridabad",
+    "lat": 28.423496,
+    "lon": 77.32404,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_9189933821",
+    "name": "Omicron 1",
+    "lat": 28.462693,
+    "lon": 77.562322,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_13359878745",
+    "name": "Omicron 1A",
+    "lat": 28.456674,
+    "lon": 77.566012,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_5409478499",
+    "name": "Pahladpur",
+    "lat": 28.385381,
+    "lon": 77.344764,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_9161932598",
+    "name": "Prateek Stylome",
+    "lat": 28.547431,
+    "lon": 77.354229,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_4012472256",
+    "name": "Preet Vihar",
+    "lat": 28.541341,
+    "lon": 77.539166,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_8816912776",
+    "name": "Raghunathpuri",
+    "lat": 28.632049,
+    "lon": 77.413519,
+    "type": "landmark",
+    "address": "Ghaziabad",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_1992173469",
+    "name": "Rajeev Nagar",
+    "lat": 28.458432,
+    "lon": 77.316229,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_1835677715",
+    "name": "Sant Nagar",
+    "lat": 28.412979,
+    "lon": 77.308841,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_10832441690",
+    "name": "Sector 12",
+    "lat": 28.385548,
+    "lon": 77.323236,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_10832441689",
+    "name": "Sector 13",
+    "lat": 28.385869,
+    "lon": 77.334394,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_10815305930",
+    "name": "Sector 18",
+    "lat": 28.57054,
+    "lon": 77.322893,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_7835031238",
+    "name": "Sector 20",
+    "lat": 28.47415,
+    "lon": 77.524498,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_10811810934",
+    "name": "Sector 62",
+    "lat": 28.621145,
+    "lon": 77.364349,
+    "type": "landmark",
+    "address": "Noida",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_5358624821",
+    "name": "Seemant Vihar",
+    "lat": 28.635227,
+    "lon": 77.325306,
+    "type": "landmark",
+    "address": "Sector-14, Kaushambi",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_9480272475",
+    "name": "Shaheen Bagh",
+    "lat": 28.546642,
+    "lon": 77.300813,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_4012472258",
+    "name": "Shiv Vatika",
+    "lat": 28.543896,
+    "lon": 77.544356,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_8612166750",
+    "name": "Surajpur",
+    "lat": 28.512576,
+    "lon": 77.479277,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_10815277005",
+    "name": "Trilok Puri",
+    "lat": 28.606676,
+    "lon": 77.308777,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_14148153297",
+    "name": "Unitech Horizon",
+    "lat": 28.4768,
+    "lon": 77.546045,
+    "type": "landmark",
+    "address": "",
+    "weight": 1.5
+  },
+  {
+    "id": "osm_node_11208068116",
+    "name": "Ambedkar Park",
+    "lat": 28.494706,
+    "lon": 77.32526,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_10959535708",
+    "name": "Bhim Ambedkar Park",
+    "lat": 28.64639,
+    "lon": 77.421236,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_5162813540",
+    "name": "C Park",
+    "lat": 28.58537,
+    "lon": 77.307609,
+    "type": "park",
+    "address": "C street, Sector 14, Noida, UP, 201301",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_5464308612",
+    "name": "Children Park",
+    "lat": 28.572349,
+    "lon": 77.388843,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_5464317696",
+    "name": "Children Playing Area",
+    "lat": 28.567891,
+    "lon": 77.392179,
+    "type": "park",
+    "address": "Antariksh Kanball, Sector 77, Noida",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_4568130142",
+    "name": "D Block, Sector 36 Park",
+    "lat": 28.571245,
+    "lon": 77.347444,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_2410792739",
+    "name": "DDA Park",
+    "lat": 28.636131,
+    "lon": 77.301303,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_11696860092",
+    "name": "Durga Pooja Ground",
+    "lat": 28.58254,
+    "lon": 77.340564,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_14041018603",
+    "name": "EXOTICA DREAMVILLE",
+    "lat": 28.616041,
+    "lon": 77.422582,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_11694683851",
+    "name": "Entrance",
+    "lat": 28.63678,
+    "lon": 77.362941,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_824561339",
+    "name": "Express Garden",
+    "lat": 28.638814,
+    "lon": 77.367561,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_12593949527",
+    "name": "Garden",
+    "lat": 28.613845,
+    "lon": 77.336898,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_4609570955",
+    "name": "Gautam Budh park",
+    "lat": 28.579952,
+    "lon": 77.303301,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_11779805130",
+    "name": "Ground",
+    "lat": 28.412757,
+    "lon": 77.35369,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_11696883274",
+    "name": "J-Block Park",
+    "lat": 28.584095,
+    "lon": 77.338586,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_13305019274",
+    "name": "JIIT-128 Campus Ground",
+    "lat": 28.519318,
+    "lon": 77.365963,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_12456223601",
+    "name": "Jaypee Aman Park",
+    "lat": 28.445173,
+    "lon": 77.465956,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_10542713828",
+    "name": "Junior High School Ground Chipiyana Buzurg",
+    "lat": 28.621558,
+    "lon": 77.446764,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_11696768842",
+    "name": "L Block Park",
+    "lat": 28.584861,
+    "lon": 77.34012,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_11696768816",
+    "name": "M block park",
+    "lat": 28.582824,
+    "lon": 77.342045,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_11831185185",
+    "name": "ME   ♡𓆝",
+    "lat": 28.521417,
+    "lon": 77.354208,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_10902496924",
+    "name": "MK Park",
+    "lat": 28.404953,
+    "lon": 77.363499,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_13306877486",
+    "name": "Main Ground",
+    "lat": 28.519688,
+    "lon": 77.366253,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_10542670639",
+    "name": "Mandir Park",
+    "lat": 28.62338,
+    "lon": 77.446504,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_4631114600",
+    "name": "Mansarovar Park,Sector 15,Noida",
+    "lat": 28.581108,
+    "lon": 77.303136,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_5464317697",
+    "name": "Municipla Park",
+    "lat": 28.567686,
+    "lon": 77.393198,
+    "type": "park",
+    "address": "Noida Municipality, Sector 77, Noida",
+    "weight": 1.0
+  },
+  {
+    "id": "noida_expressway_toll",
+    "name": "Noida–Greater Noida Expressway",
+    "lat": 28.5161,
+    "lon": 77.4022,
+    "type": "road",
+    "address": "Noida Expressway, Uttar Pradesh",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_10902652080",
+    "name": "Palms park",
+    "lat": 28.415172,
+    "lon": 77.355082,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_5464317695",
+    "name": "Park @ Ajnara",
+    "lat": 28.572956,
+    "lon": 77.392216,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_10542718210",
+    "name": "Primary School Chipiyana Buzurg",
+    "lat": 28.627806,
+    "lon": 77.452439,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_10902473683",
+    "name": "SL Park",
+    "lat": 28.405671,
+    "lon": 77.363589,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_11697191666",
+    "name": "Sector 21 park",
+    "lat": 28.587153,
+    "lon": 77.335494,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_7375919744",
+    "name": "Shaheed Swapnil vatika",
+    "lat": 28.645508,
+    "lon": 77.343761,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_12593949523",
+    "name": "Sports Ground",
+    "lat": 28.614105,
+    "lon": 77.33587,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_11694491817",
+    "name": "Table tennis hall",
+    "lat": 28.637125,
+    "lon": 77.361007,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_13680877501",
+    "name": "Water tank park",
+    "lat": 28.45676,
+    "lon": 77.506792,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_9966704520",
+    "name": "gurjjar samrat mihir bhoj park",
+    "lat": 28.498953,
+    "lon": 77.309345,
+    "type": "park",
+    "address": "Jaitpur Road, new delhi Hariyana",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_9966666182",
+    "name": "gurjjar samrat mihir bhoj park ,2",
+    "lat": 28.498786,
+    "lon": 77.310028,
+    "type": "park",
+    "address": "Jaitpur Road, new delhi Hariyana",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_9966699001",
+    "name": "local park",
+    "lat": 28.498837,
+    "lon": 77.318691,
+    "type": "park",
+    "address": "shri colony Gali no1, new delhi hariyana",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_node_11697400926",
+    "name": "sector 26 park",
+    "lat": 28.581899,
+    "lon": 77.336081,
+    "type": "park",
+    "address": "",
+    "weight": 1.0
+  },
+  {
+    "id": "osm_way_172399579",
+    "name": "9-10 Dividing Road",
+    "lat": 28.375767,
+    "lon": 77.329303,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_371070864",
+    "name": "ABES College Road",
+    "lat": 28.634666,
+    "lon": 77.447457,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_63575266",
+    "name": "APJ Abdul Kalam Road",
+    "lat": 28.464383,
+    "lon": 77.495157,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_358614424",
+    "name": "Accord Hospital Road",
+    "lat": 28.389614,
+    "lon": 77.350397,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_358614375",
+    "name": "Ajad Hind Marg",
+    "lat": 28.400304,
+    "lon": 77.337766,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_174267667",
+    "name": "Allama Shibli Nomani Road",
+    "lat": 28.545693,
+    "lon": 77.298645,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_28123719",
+    "name": "Amaltash Marg",
+    "lat": 28.598982,
+    "lon": 77.344291,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172346127",
+    "name": "Ambedkar Marg",
+    "lat": 28.416263,
+    "lon": 77.321473,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170566351",
+    "name": "Amity Road",
+    "lat": 28.543367,
+    "lon": 77.335332,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1075040069",
+    "name": "Amolik Chowk",
+    "lat": 28.411005,
+    "lon": 77.349436,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_43307246",
+    "name": "Amrapali Marg",
+    "lat": 28.543836,
+    "lon": 77.304816,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_63217201",
+    "name": "Amritpuram Chowk",
+    "lat": 28.478456,
+    "lon": 77.500551,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_72002990",
+    "name": "Anand Vihar Railway Terminal Flyover",
+    "lat": 28.651129,
+    "lon": 77.319248,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_769907819",
+    "name": "Ashok Road",
+    "lat": 28.593113,
+    "lon": 77.365244,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_560928379",
+    "name": "Ashray Bhavan Road",
+    "lat": 28.385951,
+    "lon": 77.352324,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_164702317",
+    "name": "Aurangzeb Road",
+    "lat": 28.55474,
+    "lon": 77.298929,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71686840",
+    "name": "B Block Road",
+    "lat": 28.613755,
+    "lon": 77.390636,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71644009",
+    "name": "BPO Road",
+    "lat": 28.605729,
+    "lon": 77.36202,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172311519",
+    "name": "Badkhal Flyover",
+    "lat": 28.427391,
+    "lon": 77.306311,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172573169",
+    "name": "Badshah Khan Chowk",
+    "lat": 28.392184,
+    "lon": 77.301678,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_72002975",
+    "name": "Baman Marg",
+    "lat": 28.645729,
+    "lon": 77.325402,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_379890430",
+    "name": "Bandh Road",
+    "lat": 28.548245,
+    "lon": 77.320036,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71644094",
+    "name": "Bhabha Marg",
+    "lat": 28.605877,
+    "lon": 77.367473,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_44822154",
+    "name": "Bhagwan Mahavir Swami Marg",
+    "lat": 28.600009,
+    "lon": 77.322753,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_65484770",
+    "name": "Bhangel Road",
+    "lat": 28.528422,
+    "lon": 77.390379,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_27991162",
+    "name": "Bhardwaj Road",
+    "lat": 28.599896,
+    "lon": 77.358536,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_176492768",
+    "name": "Bhartendu Harish Chandra Marg",
+    "lat": 28.652397,
+    "lon": 77.305051,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1426780895",
+    "name": "Cape Town Road",
+    "lat": 28.574901,
+    "lon": 77.386476,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_25457937",
+    "name": "Chameli Marg",
+    "lat": 28.571066,
+    "lon": 77.338255,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_773133147",
+    "name": "Chipiyana Buzurg Road",
+    "lat": 28.632839,
+    "lon": 77.456796,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66324708",
+    "name": "City Center Marg",
+    "lat": 28.589893,
+    "lon": 77.344615,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_65484771",
+    "name": "Colonel Krishna Bal Kapoor Marg",
+    "lat": 28.528914,
+    "lon": 77.390781,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1376682528",
+    "name": "Crossing Republik",
+    "lat": 28.610676,
+    "lon": 77.437404,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_39402670",
+    "name": "Crossings Republik Road",
+    "lat": 28.627105,
+    "lon": 77.439933,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76702784",
+    "name": "DME Service Road",
+    "lat": 28.632531,
+    "lon": 77.333233,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1342387130",
+    "name": "DND KMP Expressway",
+    "lat": 28.456828,
+    "lon": 77.31862,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_25457951",
+    "name": "DND Noida Flyover",
+    "lat": 28.572972,
+    "lon": 77.311399,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_87156236",
+    "name": "DTC Circle",
+    "lat": 28.478542,
+    "lon": 77.481439,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_421783995",
+    "name": "Dadri Bypass",
+    "lat": 28.539997,
+    "lon": 77.530332,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_63622986",
+    "name": "Dadri Road",
+    "lat": 28.51437,
+    "lon": 77.483445,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_70534947",
+    "name": "Dallupura Marg",
+    "lat": 28.604178,
+    "lon": 77.323645,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1426553702",
+    "name": "Dayal Bagh Road",
+    "lat": 28.488177,
+    "lon": 77.300122,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1256888162",
+    "name": "Deva Pool Bridge",
+    "lat": 28.410852,
+    "lon": 77.333667,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_72002969",
+    "name": "Dharam Marg",
+    "lat": 28.639804,
+    "lon": 77.344078,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66178318",
+    "name": "Dharampal Satyapal Road",
+    "lat": 28.601709,
+    "lon": 77.389387,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170984108",
+    "name": "Dharamshila Road",
+    "lat": 28.600312,
+    "lon": 77.311199,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71941205",
+    "name": "Doctor Sushila Naiyar Marg",
+    "lat": 28.639198,
+    "lon": 77.373925,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_358614228",
+    "name": "Dr. Bhimrao Ambedkar Marg",
+    "lat": 28.389125,
+    "lon": 77.372938,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_277905476",
+    "name": "FSSF Road",
+    "lat": 28.633056,
+    "lon": 77.355372,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1075013433",
+    "name": "Faridabad kalindi kunj road",
+    "lat": 28.499703,
+    "lon": 77.315639,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170593607",
+    "name": "Faridabad-Noida-Ghaziabad Expressway",
+    "lat": 28.603872,
+    "lon": 77.40275,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_86615061",
+    "name": "First Meridian",
+    "lat": 28.455731,
+    "lon": 77.545418,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_232638514",
+    "name": "Flyover",
+    "lat": 28.561107,
+    "lon": 77.337899,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_65484748",
+    "name": "Gejha Road",
+    "lat": 28.516109,
+    "lon": 77.386996,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_243317301",
+    "name": "Gharoli Main Road",
+    "lat": 28.613373,
+    "lon": 77.324562,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76727572",
+    "name": "Ghazipur Road",
+    "lat": 28.631668,
+    "lon": 77.315958,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_446954821",
+    "name": "Ghazipur Road Flyover",
+    "lat": 28.63703,
+    "lon": 77.314755,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170938149",
+    "name": "Ghazipur Underpass",
+    "lat": 28.62741,
+    "lon": 77.317745,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_74164022",
+    "name": "Grudwara Road",
+    "lat": 28.65129,
+    "lon": 77.362366,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_188594032",
+    "name": "Gururkul Road",
+    "lat": 28.46813,
+    "lon": 77.296561,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_422192372",
+    "name": "Hapur Bypass",
+    "lat": 28.636075,
+    "lon": 77.445054,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71969354",
+    "name": "Harshvardhan Marg",
+    "lat": 28.645436,
+    "lon": 77.34975,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172330765",
+    "name": "ITI Road",
+    "lat": 28.411795,
+    "lon": 77.298817,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_63575270",
+    "name": "India Expo Mart Circle",
+    "lat": 28.459253,
+    "lon": 77.499383,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_63575281",
+    "name": "India Expo Mart Road",
+    "lat": 28.456806,
+    "lon": 77.519138,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66324709",
+    "name": "Jain Marg",
+    "lat": 28.570408,
+    "lon": 77.361243,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172701716",
+    "name": "Jaitpur Road",
+    "lat": 28.498778,
+    "lon": 77.306498,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1187592011",
+    "name": "Jal Vayu Vihar Road",
+    "lat": 28.580003,
+    "lon": 77.331295,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_86627054",
+    "name": "Jaypee Wishtown Internal Road",
+    "lat": 28.508071,
+    "lon": 77.380991,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_65473890",
+    "name": "Jhasi Rani Lakshmibai Road",
+    "lat": 28.510573,
+    "lon": 77.368802,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172579294",
+    "name": "KC Road",
+    "lat": 28.399743,
+    "lon": 77.301537,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172573286",
+    "name": "KL Mehta Road",
+    "lat": 28.388577,
+    "lon": 77.30004,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_69665340",
+    "name": "Kachnar Marg",
+    "lat": 28.571206,
+    "lon": 77.333591,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71941098",
+    "name": "Kala Pathar Road",
+    "lat": 28.634808,
+    "lon": 77.360073,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_555801095",
+    "name": "Kalandi Kunj Road",
+    "lat": 28.520479,
+    "lon": 77.326853,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_670037899",
+    "name": "Kalindi Kunj Bridge",
+    "lat": 28.543772,
+    "lon": 77.311234,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76733233",
+    "name": "Karkari Mor Flyover",
+    "lat": 28.641098,
+    "lon": 77.301406,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_296656082",
+    "name": "Kaveri Marg",
+    "lat": 28.652095,
+    "lon": 77.368035,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_188610210",
+    "name": "Kheri Road",
+    "lat": 28.41966,
+    "lon": 77.353852,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76849148",
+    "name": "Khichripur Road",
+    "lat": 28.621679,
+    "lon": 77.312298,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170988879",
+    "name": "Khora Road",
+    "lat": 28.623771,
+    "lon": 77.347582,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76849441",
+    "name": "Khudiram Bose Marg",
+    "lat": 28.607175,
+    "lon": 77.303304,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76849140",
+    "name": "Kotla Road",
+    "lat": 28.614503,
+    "lon": 77.318156,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_710980791",
+    "name": "Kotwal Dhan Singh Gurjar Marg",
+    "lat": 28.387936,
+    "lon": 77.364463,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_63540337",
+    "name": "L G Chowk",
+    "lat": 28.486492,
+    "lon": 77.494317,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172379997",
+    "name": "Labour Chownk",
+    "lat": 28.402402,
+    "lon": 77.326837,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_63622993",
+    "name": "Lakhnawali Road",
+    "lat": 28.51061,
+    "lon": 77.476178,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172379993",
+    "name": "Lal Bahadur Shastri Marg",
+    "lat": 28.402336,
+    "lon": 77.326554,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_96192453",
+    "name": "Lieutenant Vijyant Thapar Marg",
+    "lat": 28.579193,
+    "lon": 77.316935,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_96192450",
+    "name": "Lieutenant Vijyant Thapar Marg Underpass",
+    "lat": 28.561714,
+    "lon": 77.338794,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_72002967",
+    "name": "Madan Mohan Malviya Marg",
+    "lat": 28.657096,
+    "lon": 77.350681,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76733282",
+    "name": "Madhu Vihar Road",
+    "lat": 28.629095,
+    "lon": 77.300607,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66206352",
+    "name": "Mahamaya Flyover",
+    "lat": 28.556505,
+    "lon": 77.325819,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66206354",
+    "name": "Mahamaya Flyover Ramp",
+    "lat": 28.556104,
+    "lon": 77.32663,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66178366",
+    "name": "Maharaja Agrasen Marg",
+    "lat": 28.595605,
+    "lon": 77.361426,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_505052490",
+    "name": "Maharaja Agrasen Marg (Flyover)",
+    "lat": 28.586982,
+    "lon": 77.349921,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170673278",
+    "name": "Maharaja Agrasen Marg Underpass",
+    "lat": 28.56821,
+    "lon": 77.325071,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_69583970",
+    "name": "Maharshi Dayanand Marg",
+    "lat": 28.566505,
+    "lon": 77.336105,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_424014553",
+    "name": "Maharshi Valmiki Marg",
+    "lat": 28.650574,
+    "lon": 77.300376,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1426552860",
+    "name": "Maim Market Road",
+    "lat": 28.474219,
+    "lon": 77.308201,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_560621339",
+    "name": "Main Market Road",
+    "lat": 28.503097,
+    "lon": 77.301126,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66188308",
+    "name": "Main Road Gijhor",
+    "lat": 28.587256,
+    "lon": 77.361874,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71941268",
+    "name": "Mall Road",
+    "lat": 28.64137,
+    "lon": 77.367142,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76733247",
+    "name": "Mandawali Main Road",
+    "lat": 28.628495,
+    "lon": 77.304697,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170455156",
+    "name": "Mathura Road",
+    "lat": 28.504107,
+    "lon": 77.300087,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172586594",
+    "name": "Metro Marg",
+    "lat": 28.389904,
+    "lon": 77.297004,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_44822966",
+    "name": "Metro Station Road",
+    "lat": 28.589072,
+    "lon": 77.301447,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71941165",
+    "name": "Mohan Nagar Link Road",
+    "lat": 28.651357,
+    "lon": 77.377849,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_727980743",
+    "name": "NH 9",
+    "lat": 28.633688,
+    "lon": 77.386344,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_151458213",
+    "name": "Nala Road",
+    "lat": 28.594415,
+    "lon": 77.305839,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_28127510",
+    "name": "Narmada Marg",
+    "lat": 28.601271,
+    "lon": 77.339434,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172573199",
+    "name": "Neelam Chowk",
+    "lat": 28.392403,
+    "lon": 77.305866,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172573202",
+    "name": "Neelam Flyover",
+    "lat": 28.392611,
+    "lon": 77.308495,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71444969",
+    "name": "New Ashok Nagar Bridge",
+    "lat": 28.589398,
+    "lon": 77.300595,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71605301",
+    "name": "New Ashok Nagar Road",
+    "lat": 28.589749,
+    "lon": 77.300085,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71219829",
+    "name": "New Kondli Road",
+    "lat": 28.601338,
+    "lon": 77.337432,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_43306725",
+    "name": "Nithari Road",
+    "lat": 28.570844,
+    "lon": 77.34444,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_70535822",
+    "name": "Noida 22 Main Road",
+    "lat": 28.599683,
+    "lon": 77.342697,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170593433",
+    "name": "Noida Link Road",
+    "lat": 28.597675,
+    "lon": 77.454667,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_44822752",
+    "name": "Noida Road",
+    "lat": 28.613873,
+    "lon": 77.321771,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_379890428",
+    "name": "Okhla Barrage",
+    "lat": 28.547086,
+    "lon": 77.313534,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_353604080",
+    "name": "Old Kasana Road",
+    "lat": 28.506688,
+    "lon": 77.484323,
+    "type": "road",
+    "address": "Surajpur, greater Noida",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_188594141",
+    "name": "Old Sher Shah Suri Road",
+    "lat": 28.446863,
+    "lon": 77.316969,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_63608409",
+    "name": "P 3 Circle",
+    "lat": 28.458113,
+    "lon": 77.520495,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_364871532",
+    "name": "Panchmukhi Chowk",
+    "lat": 28.58302,
+    "lon": 77.441327,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71644007",
+    "name": "Paramahansa Yogananda Road",
+    "lat": 28.624026,
+    "lon": 77.359919,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_63223327",
+    "name": "Pari Chowk",
+    "lat": 28.465262,
+    "lon": 77.511439,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1238765714",
+    "name": "Parthala Flyover",
+    "lat": 28.598548,
+    "lon": 77.404497,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66160630",
+    "name": "Pradhan Jaipal Singh Road",
+    "lat": 28.590213,
+    "lon": 77.402045,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170938173",
+    "name": "Pragati Marg",
+    "lat": 28.61395,
+    "lon": 77.340972,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_39790447",
+    "name": "Pratap Vihar Road",
+    "lat": 28.649668,
+    "lon": 77.410421,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_353215625",
+    "name": "Purana Bazaar",
+    "lat": 28.511158,
+    "lon": 77.480028,
+    "type": "road",
+    "address": "Purana Bazaar, Greater Noida",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66148227",
+    "name": "Pusta Road",
+    "lat": 28.631143,
+    "lon": 77.3919,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_421796577",
+    "name": "Raghuvanshi Road",
+    "lat": 28.645244,
+    "lon": 77.397588,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172330846",
+    "name": "Railway Road",
+    "lat": 28.413747,
+    "lon": 77.301528,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1306497426",
+    "name": "Raipur Khadar Main Road",
+    "lat": 28.539711,
+    "lon": 77.333793,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_96192448",
+    "name": "Rajnigandha Underpass",
+    "lat": 28.575977,
+    "lon": 77.316951,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_68576576",
+    "name": "Rajput Samrat Prithviraj Chauhan Road",
+    "lat": 28.554338,
+    "lon": 77.3569,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76964993",
+    "name": "Ram Kumar Gautam Marg",
+    "lat": 28.621975,
+    "lon": 77.309662,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_815702100",
+    "name": "Ram Manohar Lohia Marg",
+    "lat": 28.642167,
+    "lon": 77.385112,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_70535825",
+    "name": "Ramnath Goenka Marg",
+    "lat": 28.593888,
+    "lon": 77.340507,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170938254",
+    "name": "Road Number 109",
+    "lat": 28.617337,
+    "lon": 77.337657,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76727403",
+    "name": "Road Number 57",
+    "lat": 28.63612,
+    "lon": 77.310826,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76727444",
+    "name": "Road Number 57A",
+    "lat": 28.629116,
+    "lon": 77.312213,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_68791295",
+    "name": "Sadarpur Main Road",
+    "lat": 28.558483,
+    "lon": 77.346204,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_77004099",
+    "name": "Sadhbhawna Marg",
+    "lat": 28.59575,
+    "lon": 77.299631,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_77004104",
+    "name": "Sahakarita Marg",
+    "lat": 28.610818,
+    "lon": 77.299655,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_69583998",
+    "name": "Saheed Smarak  Marg",
+    "lat": 28.564869,
+    "lon": 77.335541,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71847538",
+    "name": "Sai Baba Temple Road",
+    "lat": 28.592586,
+    "lon": 77.369471,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_65484784",
+    "name": "Sampark Marg",
+    "lat": 28.51883,
+    "lon": 77.389765,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71297410",
+    "name": "Samrat Ashok Road",
+    "lat": 28.594578,
+    "lon": 77.31746,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_86627052",
+    "name": "Sardar Vallabhbhai Patel Marg",
+    "lat": 28.50472,
+    "lon": 77.396227,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_72003010",
+    "name": "Saur Urja Marg",
+    "lat": 28.653898,
+    "lon": 77.329332,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_86615034",
+    "name": "Second Meridian",
+    "lat": 28.459976,
+    "lon": 77.552035,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_65484759",
+    "name": "Sector 108 - 128 Underpass",
+    "lat": 28.521745,
+    "lon": 77.373961,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170574173",
+    "name": "Sector 116 Main Road",
+    "lat": 28.564983,
+    "lon": 77.400144,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170566153",
+    "name": "Sector 127/128 Road",
+    "lat": 28.531557,
+    "lon": 77.350579,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_68789879",
+    "name": "Sector 44 Road",
+    "lat": 28.547497,
+    "lon": 77.339676,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_68789784",
+    "name": "Sector 45 Road",
+    "lat": 28.544961,
+    "lon": 77.351528,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1184123234",
+    "name": "Sector 48 Road",
+    "lat": 28.553394,
+    "lon": 77.373425,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1125566713",
+    "name": "Sector 62 Road",
+    "lat": 28.609763,
+    "lon": 77.376495,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66178362",
+    "name": "Sector 63 Road",
+    "lat": 28.596247,
+    "lon": 77.379839,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66178348",
+    "name": "Sector 70 Park Road",
+    "lat": 28.59708,
+    "lon": 77.384358,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1117053303",
+    "name": "Sector 74 Road",
+    "lat": 28.571904,
+    "lon": 77.391188,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170574175",
+    "name": "Sector 75 Road",
+    "lat": 28.571408,
+    "lon": 77.382781,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170574158",
+    "name": "Sector 76 Inner Road",
+    "lat": 28.568109,
+    "lon": 77.386808,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1216465047",
+    "name": "Sector 78 Main Road",
+    "lat": 28.564408,
+    "lon": 77.386595,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66148214",
+    "name": "Sector 80 Road",
+    "lat": 28.553959,
+    "lon": 77.412752,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1070561084",
+    "name": "Sector 89 Road",
+    "lat": 28.421249,
+    "lon": 77.362241,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1072606397",
+    "name": "Service Lane",
+    "lat": 28.605226,
+    "lon": 77.444997,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1426557094",
+    "name": "Shahdara Road",
+    "lat": 28.504575,
+    "lon": 77.411582,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172579297",
+    "name": "Shaheed Bhagat Singh Chowk",
+    "lat": 28.407182,
+    "lon": 77.304831,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_172573719",
+    "name": "Shaheed Bhagat Singh Marg",
+    "lat": 28.399807,
+    "lon": 77.305486,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_28122050",
+    "name": "Shaheed Captain Sameer Bhan Marg",
+    "lat": 28.604014,
+    "lon": 77.310915,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66160637",
+    "name": "Shaheed Captain Shashikant Sharma Marg",
+    "lat": 28.575861,
+    "lon": 77.357491,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1236849702",
+    "name": "Shaheed Captain Shashikant Sharma Marg Underpass",
+    "lat": 28.58859,
+    "lon": 77.374706,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1096169667",
+    "name": "Shaheed Hawaldar Padam Singh Dharma Marg",
+    "lat": 28.602691,
+    "lon": 77.372387,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1416481877",
+    "name": "Shaheed captain Manoj Pandey Marg",
+    "lat": 28.632542,
+    "lon": 77.3783,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170938124",
+    "name": "Shivaji Marg",
+    "lat": 28.624646,
+    "lon": 77.337349,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76965015",
+    "name": "Shri Hanuman Marg",
+    "lat": 28.619228,
+    "lon": 77.313776,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170979690",
+    "name": "Smriti Van Marg",
+    "lat": 28.605953,
+    "lon": 77.337343,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_995575900",
+    "name": "Supershine Chowk",
+    "lat": 28.620977,
+    "lon": 77.308296,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1486431087",
+    "name": "Sushil Marg",
+    "lat": 28.624003,
+    "lon": 77.369242,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76702389",
+    "name": "Swami Dayanand Marg",
+    "lat": 28.636425,
+    "lon": 77.314293,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_358614343",
+    "name": "Swami Vivekananda Marg",
+    "lat": 28.410535,
+    "lon": 77.342525,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_358614347",
+    "name": "Swami Vivekananda Road",
+    "lat": 28.410638,
+    "lon": 77.342523,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_170593599",
+    "name": "Taj Highway",
+    "lat": 28.624558,
+    "lon": 77.415189,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_707164442",
+    "name": "Taj highway service road",
+    "lat": 28.624876,
+    "lon": 77.41472,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71297395",
+    "name": "Taksal Road",
+    "lat": 28.594172,
+    "lon": 77.312623,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_27991651",
+    "name": "Thana Road",
+    "lat": 28.65116,
+    "lon": 77.420382,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_164460775",
+    "name": "Tigaon Road",
+    "lat": 28.394491,
+    "lon": 77.356537,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_188594033",
+    "name": "Tilpat Road",
+    "lat": 28.472772,
+    "lon": 77.313397,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_859691641",
+    "name": "Trilok Puri Road",
+    "lat": 28.605909,
+    "lon": 77.298789,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_69968955",
+    "name": "Tulsi Marg",
+    "lat": 28.59522,
+    "lon": 77.351867,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_121067092",
+    "name": "Udhyog Marg Flyover",
+    "lat": 28.581963,
+    "lon": 77.30231,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_28122034",
+    "name": "Udyog Marg",
+    "lat": 28.595526,
+    "lon": 77.326225,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_relation_2890120",
+    "name": "Uttar Pradesh Major District Road 155W",
+    "lat": 28.641644,
+    "lon": 77.672049,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_76849190",
+    "name": "Vasundhara Road",
+    "lat": 28.612315,
+    "lon": 77.307741,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_86627020",
+    "name": "Veer Hardaul Marg",
+    "lat": 28.508681,
+    "lon": 77.374338,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1201025661",
+    "name": "Vij Marg",
+    "lat": 28.596488,
+    "lon": 77.377567,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_358614441",
+    "name": "Vijay Singh Pathik Marg",
+    "lat": 28.381133,
+    "lon": 77.362768,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71941195",
+    "name": "Vijaya Lakshmi Pandit Marg",
+    "lat": 28.646278,
+    "lon": 77.367079,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_81058774",
+    "name": "Vikas Marg",
+    "lat": 28.595228,
+    "lon": 77.391349,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1087427275",
+    "name": "Vikas Marg Underpass",
+    "lat": 28.589583,
+    "lon": 77.376162,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_65473899",
+    "name": "Vishwakarma Flyover",
+    "lat": 28.520231,
+    "lon": 77.376926,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_65473927",
+    "name": "Vishwakarma Road",
+    "lat": 28.531982,
+    "lon": 77.387321,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_1152847823",
+    "name": "Vishwakarma Road Underpass",
+    "lat": 28.602677,
+    "lon": 77.37262,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71644018",
+    "name": "Vishwas Marg",
+    "lat": 28.623932,
+    "lon": 77.364735,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_70534871",
+    "name": "Vyapar Marg",
+    "lat": 28.594304,
+    "lon": 77.333357,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66160601",
+    "name": "Yadu Public School Road",
+    "lat": 28.591717,
+    "lon": 77.389487,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66122649",
+    "name": "Yakubpur Road",
+    "lat": 28.53233,
+    "lon": 77.400563,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_74121765",
+    "name": "Yashoda Marg",
+    "lat": 28.647313,
+    "lon": 77.340998,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_427589724",
+    "name": "jaypee road",
+    "lat": 28.631308,
+    "lon": 77.364758,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_371711772",
+    "name": "jeetram colony road",
+    "lat": 28.545413,
+    "lon": 77.388891,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_369852348",
+    "name": "pushta Road",
+    "lat": 28.536948,
+    "lon": 77.315325,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_71969407",
+    "name": "ser saloni park",
+    "lat": 28.638206,
+    "lon": 77.353523,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  },
+  {
+    "id": "osm_way_66098599",
+    "name": "शाहिद मंगल पांडेय मार्ग",
+    "lat": 28.510271,
+    "lon": 77.393238,
+    "type": "road",
+    "address": "",
+    "weight": 0.5
+  }
+]
