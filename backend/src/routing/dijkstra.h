@@ -14,7 +14,7 @@
 #include <cstdint>
 #include <chrono>
 #include <memory>
-#include <atomic>
+#include <mutex>
 
 namespace smartcity {
 
@@ -39,11 +39,12 @@ public:
     /// Called by sim thread to publish a new snapshot.
     void publish(WeightSnapshotPtr snap);
 
-    /// Called by router threads to obtain current snapshot (lock-free).
+    /// Called by router threads to obtain current snapshot.
     WeightSnapshotPtr current() const;
 
 private:
-    std::atomic<WeightSnapshotPtr> ptr_;
+    mutable std::mutex mu_;
+    WeightSnapshotPtr snap_;
 };
 
 // ── RouteStep (turn-by-turn) ────────────────────────────────────────────────

@@ -3,6 +3,8 @@
 // All endpoints documented in docs/API.md
 
 #include <crow.h>
+#include <crow/middlewares/cors.h>
+#include <nlohmann/json.hpp>
 #include "../graph/graph.h"
 #include "../graph/spatial_grid.h"
 #include "../routing/dijkstra.h"

@@ -18,18 +18,18 @@
 namespace smartcity {
 
 // ── WeightStore ──────────────────────────────────────────────────────────────
-
-WeightStore::WeightStore(std::size_t n_edges) {
-    auto snap = std::make_shared<WeightSnapshot>(n_edges, 0);
-    ptr_.store(snap, std::memory_order_relaxed);
-}
+ 
+WeightStore::WeightStore(std::size_t n_edges)
+    : snap_(std::make_shared<WeightSnapshot>(n_edges, 0)) {}
 
 void WeightStore::publish(WeightSnapshotPtr snap) {
-    ptr_.store(snap, std::memory_order_release);
+    std::lock_guard<std::mutex> lock(mu_);
+    snap_ = std::move(snap);
 }
 
 WeightSnapshotPtr WeightStore::current() const {
-    return ptr_.load(std::memory_order_acquire);
+    std::lock_guard<std::mutex> lock(mu_);
+    return snap_;
 }
 
 // ── DijkstraRouter ────────────────────────────────────────────────────────────

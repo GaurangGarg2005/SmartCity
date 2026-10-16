@@ -23,7 +23,6 @@
 #include <stdexcept>
 #include <sstream>
 #include <algorithm>
-#include <fmt/format.h>  // included via Crow's bundled fmt
 
 namespace smartcity {
 
