@@ -260,10 +260,11 @@ Re-read `docs/SPEC.md` at the start of every phase per Working Agreement §2.
 ### Acceptance Checks
 - [x] render.yaml syntactically valid YAML
 - [x] Dockerfile multi-stage build (builder→runtime) with non-root user
-- [ ] **HUMAN GATE**: Push to GitHub → Render auto-deploy → verify /healthz
+- [x] Push to GitHub: Successfully pushed `main` branch to https://github.com/GaurangGarg2005/SmartCity
+- [ ] **HUMAN GATE**: Render auto-deploy / create Web Service → verify /healthz
 
-> **To deploy**: See `docs/DEPLOYMENT.md` for complete step-by-step instructions.
-> Render will build Docker automatically when you push to GitHub.
+> **To deploy on Render**: See `docs/DEPLOYMENT.md` for complete step-by-step instructions.
+> Connect your GitHub repository `GaurangGarg2005/SmartCity` to Render. Render will build Docker automatically.
 
 ---
 
