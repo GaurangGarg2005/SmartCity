@@ -19,7 +19,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-            build-essential cmake git libssl-dev libz-dev
+            build-essential cmake git libssl-dev libz-dev libasio-dev
 
       - name: Cache CMake FetchContent
         uses: actions/cache@v4

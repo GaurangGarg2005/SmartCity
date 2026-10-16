@@ -32,5 +32,6 @@ target_sources(smartcity_tests PRIVATE
   ../src/util/logger.cpp
 )
 
+list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/extras ${Catch2_SOURCE_DIR}/extras)
 include(Catch)
 catch_discover_tests(smartcity_tests)
