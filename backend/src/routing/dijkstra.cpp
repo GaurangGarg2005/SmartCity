@@ -138,8 +138,8 @@ DijkstraResult DijkstraRouter::route(uint32_t from, uint32_t to,
     auto t1 = Clock::now();
     res.stats.nodes_settled = nodes_settled;
     res.stats.edges_relaxed = edges_relaxed;
-    res.stats.dijkstra_us   = static_cast<uint32_t>(
-        std::chrono::duration_cast<std::chrono::microseconds>(t1 - t0).count());
+    auto elapsed_us = std::chrono::duration_cast<std::chrono::microseconds>(t1 - t0).count();
+    res.stats.dijkstra_us   = static_cast<uint32_t>(elapsed_us > 0 ? elapsed_us : 1);
 
     if (!settled[to]) return res;  // unreachable
 

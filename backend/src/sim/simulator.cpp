@@ -105,7 +105,7 @@ void Simulator::set_scenario(SimScenario s) {
 }
 
 void Simulator::set_vehicles(int n) {
-    n_vehicles_.store(std::clamp(n, 50, 5000));
+    n_vehicles_.store(std::clamp(n, 0, 10000));
 }
 
 void Simulator::reset() {
