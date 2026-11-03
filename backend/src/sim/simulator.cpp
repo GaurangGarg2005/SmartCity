@@ -65,11 +65,14 @@ Simulator::Simulator(const Graph& g, WeightStore& ws,
     // Pre-compute capacities
     for (uint32_t i = 0; i < g_.edge_count(); ++i) {
         const Edge& e = g_.edges[i];
-        edge_state_[i].capacity = static_cast<float>(std::max(1, (int)e.lanes))
-                                  * WeightUpdater::CAP_PER_LANE / 3600.0f;
-        // Convert from veh/hr/lane to veh (instantaneous on edge)
-        // Capacity in veh: length_m / (veh_length_m) × lanes, approximated:
-        edge_state_[i].capacity = static_cast<float>(std::max(1, (int)e.lanes)) * 15.0f;
+        float cap = (e.length_m / 15.0f) * static_cast<float>(std::max(1, (int)e.lanes));
+        edge_state_[i].capacity = std::max(2.0f, cap);
+        if (e.road_class <= 4) {
+            major_edges_.push_back(i);
+        }
+    }
+    if (major_edges_.empty()) {
+        for (uint32_t i = 0; i < g_.edge_count(); ++i) major_edges_.push_back(i);
     }
 }
 
@@ -92,12 +95,12 @@ void Simulator::stop() {
 void Simulator::pause() { paused_ = true; }
 
 void Simulator::set_speed(float mult) {
-    std::lock_guard<std::mutex> lk(mutex_);
+    std::lock_guard<std::recursive_mutex> lk(mutex_);
     status_.speed_mult = std::clamp(mult, 0.1f, 20.0f);
 }
 
 void Simulator::set_scenario(SimScenario s) {
-    std::lock_guard<std::mutex> lk(mutex_);
+    std::lock_guard<std::recursive_mutex> lk(mutex_);
     status_.scenario = s;
 }
 
@@ -106,28 +109,39 @@ void Simulator::set_vehicles(int n) {
 }
 
 void Simulator::reset() {
-    std::lock_guard<std::mutex> lk(mutex_);
+    std::lock_guard<std::recursive_mutex> lk(mutex_);
     vehicles_.clear();
     incidents_.clear();
     tick_id_ = 0;
     for (auto& s : edge_state_) s.vehicle_count = 0;
 }
 
+void Simulator::add_vehicle_at(uint32_t edge_idx, float progress_m) {
+    if (edge_idx >= g_.edge_count()) return;
+    std::lock_guard<std::recursive_mutex> lk(mutex_);
+    Vehicle v;
+    v.edge_idx = edge_idx;
+    v.progress_m = std::clamp(progress_m, 0.0f, g_.edges[edge_idx].length_m);
+    v.speed_ms = g_.edges[edge_idx].free_flow_speed_ms * 0.85f;
+    vehicles_.push_back(v);
+    n_vehicles_.store(static_cast<int>(vehicles_.size()));
+}
+
 void Simulator::create_incident(uint32_t edge_idx, float duration_s, float factor) {
     if (edge_idx >= g_.edge_count()) return;
-    std::lock_guard<std::mutex> lk(mutex_);
+    std::lock_guard<std::recursive_mutex> lk(mutex_);
     incidents_.push_back({ edge_idx, duration_s, std::clamp(factor, 0.05f, 5.0f) });
     SC_LOG_INFO("sim", ("Incident on edge " + std::to_string(edge_idx) +
                          " for " + std::to_string(duration_s) + "s").c_str());
 }
 
 void Simulator::on_tick(OnTickFn fn) {
-    std::lock_guard<std::mutex> lk(mutex_);
+    std::lock_guard<std::recursive_mutex> lk(mutex_);
     on_tick_ = std::move(fn);
 }
 
 SimStatus Simulator::status() const {
-    std::lock_guard<std::mutex> lk(mutex_);
+    std::lock_guard<std::recursive_mutex> lk(mutex_);
     return status_;
 }
 
@@ -140,7 +154,7 @@ void Simulator::_run_loop() {
 
     // Initial vehicle spawn
     {
-        std::lock_guard<std::mutex> lk(mutex_);
+        std::lock_guard<std::recursive_mutex> lk(mutex_);
         _rebalance_vehicles();
     }
 
@@ -154,7 +168,7 @@ void Simulator::_run_loop() {
 
         float speed_mult, sim_dt_s;
         {
-            std::lock_guard<std::mutex> lk(mutex_);
+            std::lock_guard<std::recursive_mutex> lk(mutex_);
             speed_mult = status_.speed_mult;
             sim_dt_s   = WALL_TICK_S * speed_mult * _scenario_load_factor();
             _tick(sim_dt_s);
@@ -165,7 +179,7 @@ void Simulator::_run_loop() {
             std::chrono::duration_cast<us>(tick_end - tick_start).count()) / 1000.0f;
 
         {
-            std::lock_guard<std::mutex> lk(mutex_);
+            std::lock_guard<std::recursive_mutex> lk(mutex_);
             status_.tick_ms = tick_ms;
             status_.reduced_fidelity = (tick_ms > MAX_TICK_MS);
         }
@@ -209,8 +223,21 @@ void Simulator::_tick(float sim_dt_s) {
             if (to_node < g_.node_count()) {
                 auto out = g_.out_edges(to_node);
                 if (!out.empty()) {
-                    std::uniform_int_distribution<size_t> pick(0, out.size() - 1);
-                    v.edge_idx    = out[pick(rng_)];
+                    uint32_t chosen = out[0];
+                    std::vector<uint32_t> preferred;
+                    for (uint32_t cand_ei : out) {
+                        if (cand_ei < g_.edge_count() && g_.edges[cand_ei].road_class <= 4) {
+                            preferred.push_back(cand_ei);
+                        }
+                    }
+                    if (!preferred.empty()) {
+                        std::uniform_int_distribution<size_t> pick(0, preferred.size() - 1);
+                        chosen = preferred[pick(rng_)];
+                    } else {
+                        std::uniform_int_distribution<size_t> pick(0, out.size() - 1);
+                        chosen = out[pick(rng_)];
+                    }
+                    v.edge_idx    = chosen;
                     v.progress_m  = 0.0f;
                 } else {
                     _spawn_vehicle(edge_dist);
@@ -257,9 +284,15 @@ void Simulator::_tick(float sim_dt_s) {
 
 void Simulator::_spawn_vehicle(std::uniform_int_distribution<uint32_t>& edge_dist) {
     Vehicle v;
-    v.edge_idx    = edge_dist(rng_);
+    std::uniform_real_distribution<float> p_dist(0.0f, 1.0f);
+    if (!major_edges_.empty() && p_dist(rng_) < 0.85f) {
+        std::uniform_int_distribution<size_t> maj_dist(0, major_edges_.size() - 1);
+        v.edge_idx = major_edges_[maj_dist(rng_)];
+    } else {
+        v.edge_idx = edge_dist(rng_);
+    }
     v.progress_m  = 0.0f;
-    v.speed_ms    = 0.0f;  // set in tick
+    v.speed_ms    = 0.0f;
     vehicles_.push_back(v);
 }
 
@@ -312,6 +345,150 @@ void Simulator::_apply_incidents(float dt_s) {
             ++it;
         }
     }
+}
+
+std::vector<std::pair<float, float>> Simulator::vehicle_positions(int horizon_min) const {
+    std::lock_guard<std::recursive_mutex> lk(mutex_);
+    std::vector<std::pair<float, float>> pos;
+    pos.reserve(vehicles_.size());
+
+    if (horizon_min <= 0) {
+        for (const auto& v : vehicles_) {
+            if (v.edge_idx >= g_.edge_count()) continue;
+            const Edge& e = g_.edges[v.edge_idx];
+            if (e.from >= g_.node_count() || e.to >= g_.node_count()) continue;
+            const Node& n1 = g_.nodes[e.from];
+            const Node& n2 = g_.nodes[e.to];
+            float frac = std::clamp(v.progress_m / std::max(e.length_m, 1.0f), 0.0f, 1.0f);
+            pos.push_back({n1.lon + frac * (n2.lon - n1.lon), n1.lat + frac * (n2.lat - n1.lat)});
+        }
+        return pos;
+    }
+
+    float horizon_s = static_cast<float>(horizon_min) * 60.0f;
+    for (const auto& v : vehicles_) {
+        if (v.edge_idx >= g_.edge_count()) continue;
+
+        uint32_t cur_edge = v.edge_idx;
+        float cur_prog    = v.progress_m;
+        float speed       = std::max(v.speed_ms, 4.0f);
+        float time_rem    = horizon_s;
+
+        int max_hops = 60;
+        while (time_rem > 0.0f && cur_edge < g_.edge_count() && max_hops-- > 0) {
+            const Edge& e = g_.edges[cur_edge];
+            float dist_left = std::max(0.0f, e.length_m - cur_prog);
+            float t_edge    = dist_left / speed;
+
+            if (time_rem <= t_edge) {
+                cur_prog += time_rem * speed;
+                time_rem = 0.0f;
+                break;
+            }
+
+            time_rem -= t_edge;
+            cur_prog = 0.0f;
+
+            uint32_t to_node = e.to;
+            if (to_node >= g_.node_count()) break;
+            auto out = g_.out_edges(to_node);
+            if (out.empty()) break;
+
+            uint32_t best_next = out[0];
+            uint8_t best_class = 255;
+            for (uint32_t cand_ei : out) {
+                if (cand_ei < g_.edge_count() && g_.edges[cand_ei].road_class < best_class) {
+                    best_class = g_.edges[cand_ei].road_class;
+                    best_next  = cand_ei;
+                }
+            }
+            cur_edge = best_next;
+            speed = std::max(g_.edges[cur_edge].free_flow_speed_ms * 0.75f, 4.0f);
+        }
+
+        if (cur_edge < g_.edge_count()) {
+            const Edge& e = g_.edges[cur_edge];
+            if (e.from < g_.node_count() && e.to < g_.node_count()) {
+                const Node& n1 = g_.nodes[e.from];
+                const Node& n2 = g_.nodes[e.to];
+                float frac = std::clamp(cur_prog / std::max(e.length_m, 1.0f), 0.0f, 1.0f);
+                pos.push_back({n1.lon + frac * (n2.lon - n1.lon), n1.lat + frac * (n2.lat - n1.lat)});
+            }
+        }
+    }
+    return pos;
+}
+
+
+WeightSnapshotPtr Simulator::predict_weights(int horizon_min) const {
+    if (horizon_min <= 0) return ws_.current();
+
+    auto snap = std::make_shared<WeightSnapshot>(g_.edge_count(), tick_id_);
+    std::vector<float> predicted_counts(g_.edge_count(), 0.0f);
+
+    {
+        std::lock_guard<std::recursive_mutex> lk(mutex_);
+        float horizon_s = static_cast<float>(horizon_min) * 60.0f;
+
+        for (const auto& v : vehicles_) {
+            if (v.edge_idx >= g_.edge_count()) continue;
+
+            uint32_t cur_edge = v.edge_idx;
+            float cur_prog    = v.progress_m;
+            float speed       = std::max(v.speed_ms, 4.0f);
+            float time_rem    = horizon_s;
+
+            int max_hops = 60;
+            while (time_rem > 0.0f && cur_edge < g_.edge_count() && max_hops-- > 0) {
+                const Edge& e = g_.edges[cur_edge];
+                float dist_left = std::max(0.0f, e.length_m - cur_prog);
+                float t_edge    = dist_left / speed;
+
+                if (time_rem <= t_edge) {
+                    predicted_counts[cur_edge] += 1.0f;
+                    break;
+                }
+
+                time_rem -= t_edge;
+                cur_prog = 0.0f;
+
+                uint32_t to_node = e.to;
+                if (to_node >= g_.node_count()) break;
+                auto out = g_.out_edges(to_node);
+                if (out.empty()) break;
+
+                uint32_t best_next = out[0];
+                uint8_t best_class = 255;
+                for (uint32_t cand_ei : out) {
+                    if (cand_ei < g_.edge_count() && g_.edges[cand_ei].road_class < best_class) {
+                        best_class = g_.edges[cand_ei].road_class;
+                        best_next  = cand_ei;
+                    }
+                }
+                cur_edge = best_next;
+                speed = std::max(g_.edges[cur_edge].free_flow_speed_ms * 0.75f, 4.0f);
+            }
+        }
+    }
+
+    for (uint32_t i = 0; i < g_.edge_count(); ++i) {
+        const Edge& e = g_.edges[i];
+        float ff_w = e.free_flow_s();
+        float veh  = predicted_counts[i];
+
+        if (veh <= 0.001f) {
+            snap->weights[i] = ff_w;
+        } else {
+            float cap = (i < edge_state_.size() && edge_state_[i].capacity > 0.5f)
+                        ? edge_state_[i].capacity
+                        : std::max(2.0f, (e.length_m / 15.0f) * std::max(1, (int)e.lanes));
+            float rho = std::clamp(veh / cap, 0.0f, 0.92f);
+            float v   = std::max(e.free_flow_speed_ms * (1.0f - rho), WeightUpdater::V_MIN_MS);
+            snap->weights[i] = e.length_m / v + e.delay_s;
+        }
+    }
+
+    return snap;
 }
 
 } // namespace smartcity

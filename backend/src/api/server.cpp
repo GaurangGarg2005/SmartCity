@@ -13,6 +13,7 @@
 
 #include "server.h"
 #include "../routing/polyline.h"
+#include "../routing/alternatives.h"
 #include "../sim/predictor.h"
 #include <nlohmann/json.hpp>
 #include <chrono>
@@ -266,7 +267,7 @@ void register_routes(crow::App<crow::CORSHandler>& app,
 
     // ── POST /api/route ───────────────────────────────────────────────────────
     CROW_ROUTE(app, "/api/route").methods(crow::HTTPMethod::POST)
-    ([&g, &grid, &ws](const crow::request& req) {
+    ([&g, &grid, &ws, &sim](const crow::request& req) {
         json body;
         try { body = json::parse(req.body); }
         catch (...) {
@@ -282,8 +283,12 @@ void register_routes(crow::App<crow::CORSHandler>& app,
                 float lat = field["lat"].get<float>();
                 float lon = field["lon"].get<float>();
                 auto snap = grid.snap_to_edge(lat, lon, g, 500.0f);
-                if (!snap.valid) return -1;
-                return static_cast<int64_t>(g.edges[snap.edge_idx].from);
+                if (!snap.valid) snap = grid.snap_to_edge(lat, lon, g, 2000.0f);
+                if (!snap.valid) snap = grid.snap_to_edge(lat, lon, g, 5000.0f);
+                if (snap.valid) return static_cast<int64_t>(g.edges[snap.edge_idx].from);
+                auto near_nodes = grid.nearest_nodes(lat, lon, 1);
+                if (!near_nodes.empty()) return static_cast<int64_t>(near_nodes[0]);
+                return -1;
             }
             return -1;
         };
@@ -312,7 +317,7 @@ void register_routes(crow::App<crow::CORSHandler>& app,
         // For prediction: build a temporary WeightStore seeded with predicted weights
         WeightSnapshotPtr route_snap;
         if (horizon_min > 0 && use_live) {
-            route_snap = predict(g, ws, horizon_min);
+            route_snap = sim.predict_weights(horizon_min);
         } else {
             route_snap = ws.current();
         }
@@ -332,7 +337,18 @@ void register_routes(crow::App<crow::CORSHandler>& app,
         }
 
         json routes = json::array();
-        routes.push_back(route_to_json(best, g, "Fastest"));
+        if (n_alts > 0) {
+            auto alts = compute_alternatives(static_cast<uint32_t>(from_id),
+                                             static_cast<uint32_t>(to_id),
+                                             g, route_ws, 3, 1.35f, 2.2f, 0.85f);
+            for (size_t i = 0; i < alts.routes.size(); ++i) {
+                std::string label = (i == 0) ? "Fastest" : ("Alt " + std::to_string(i));
+                routes.push_back(route_to_json(alts.routes[i], g, label));
+            }
+        }
+        if (routes.empty()) {
+            routes.push_back(route_to_json(best, g, "Fastest"));
+        }
 
         // Explored nodes for Dijkstra visualizer
         json explored = json::array();
@@ -359,7 +375,7 @@ void register_routes(crow::App<crow::CORSHandler>& app,
 
     // ── GET /api/traffic ─────────────────────────────────────────────────────
     CROW_ROUTE(app, "/api/traffic")
-    ([&g, &ws](const crow::request& req) {
+    ([&g, &ws, &sim](const crow::request& req) {
         auto bbox_s = req.url_params.get("bbox");
         auto zoom_s = req.url_params.get("zoom");
         int zoom = zoom_s ? std::stoi(zoom_s) : 14;
@@ -378,7 +394,9 @@ void register_routes(crow::App<crow::CORSHandler>& app,
         else if (zoom < 14) min_class = 5;   // secondary+
         else min_class = 7;                  // all
 
-        auto snap = ws.current();
+        auto horizon_s = req.url_params.get("horizon");
+        int horizon_min = horizon_s ? std::clamp(std::stoi(horizon_s), 0, 60) : 0;
+        WeightSnapshotPtr snap = (horizon_min > 0) ? sim.predict_weights(horizon_min) : ws.current();
         json edges = json::array();
         int count = 0;
 
@@ -421,6 +439,59 @@ void register_routes(crow::App<crow::CORSHandler>& app,
         json body = {{"edges", edges}, {"tick", snap->tick_id},
                      {"data_source", "SIMULATED LIVE"}};
         crow::response res(body.dump());
+        set_json_headers(res);
+        return res;
+    });
+
+    // ── GET /api/vehicles ─────────────────────────────────────────────────────
+    CROW_ROUTE(app, "/api/vehicles")
+    ([&sim](const crow::request& req) {
+        auto horizon_s = req.url_params.get("horizon");
+        int horizon_min = horizon_s ? std::clamp(std::stoi(horizon_s), 0, 120) : 0;
+        auto positions = sim.vehicle_positions(horizon_min);
+        json body = {
+            {"horizon_min", horizon_min},
+            {"count",       positions.size()},
+            {"positions",   positions}
+        };
+        crow::response res(body.dump());
+        set_json_headers(res);
+        return res;
+    });
+
+    // ── POST /api/sim/my-vehicle ──────────────────────────────────────────────
+    CROW_ROUTE(app, "/api/sim/my-vehicle").methods(crow::HTTPMethod::POST)
+    ([&sim, &g, &grid](const crow::request& req) {
+        json body;
+        try { body = json::parse(req.body); }
+        catch (...) {
+            crow::response res(400, make_error(400, "Invalid JSON").dump());
+            set_json_headers(res);
+            return res;
+        }
+
+        float lat = body.value("lat", 0.0f);
+        float lon = body.value("lon", 0.0f);
+
+        auto snap = grid.snap_to_edge(lat, lon, g, 500.0f);
+        if (!snap.valid || snap.edge_idx >= g.edge_count()) {
+            crow::response res(400, make_error(400, "Location not near a valid road").dump());
+            set_json_headers(res);
+            return res;
+        }
+
+        sim.add_vehicle_at(snap.edge_idx, snap.dist_m);
+        const Edge& e = g.edges[snap.edge_idx];
+
+        json resp = {
+            {"ok",           true},
+            {"edge_idx",     snap.edge_idx},
+            {"road_name",    g.edge_name(e)},
+            {"speed_limit",  e.free_flow_speed_ms * 3.6f},
+            {"vehicle_count", sim.status().vehicle_count},
+            {"message",      "Your vehicle has been added to the live road simulation!"}
+        };
+        crow::response res(resp.dump());
         set_json_headers(res);
         return res;
     });
@@ -550,7 +621,7 @@ void register_routes(crow::App<crow::CORSHandler>& app,
         };
         conn.send_text(hello.dump());
     })
-    .onclose([&hub](crow::websocket::connection& conn, const std::string& reason, uint16_t) {
+    .onclose([&hub](crow::websocket::connection& conn, const std::string& reason) {
         hub.remove(&conn);
         SC_LOG_INFO("ws", ("Client disconnected: " + reason).c_str());
     })

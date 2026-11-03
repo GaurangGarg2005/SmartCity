@@ -1,10 +1,9 @@
 /**
- * SmartCity Service Worker (Phase 0 skeleton)
- * Precaches the app shell and vendored libraries.
- * Full offline page and cache strategies added in Phase 6.
+ * SmartCity Service Worker
+ * Network-first strategy with cache fallback.
  */
 
-const CACHE_NAME = 'smartcity-v1';
+const CACHE_NAME = 'smartcity-v2';
 
 const APP_SHELL = [
   '/',
@@ -35,31 +34,29 @@ const APP_SHELL = [
 ];
 
 self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(APP_SHELL))
-      .then(() => self.skipWaiting())
-  );
+  self.skipWaiting();
 });
 
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
-      Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
+      Promise.all(keys.map(k => caches.delete(k)))
     ).then(() => self.clients.claim())
   );
 });
 
 self.addEventListener('fetch', event => {
   const { request } = event;
-  // Network-first for API and WS; cache-first for app shell
-  if (request.url.includes('/api/') || request.url.includes('/healthz')) {
-    event.respondWith(fetch(request).catch(() => new Response('{}', { status: 503 })));
-    return;
-  }
+  // Always fetch network first so browser immediately receives updated assets
   event.respondWith(
-    caches.match(request).then(cached =>
-      cached || fetch(request).catch(() => caches.match('/offline.html'))
-    )
+    fetch(request)
+      .then(response => {
+        if (request.method === 'GET' && response.status === 200) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+        }
+        return response;
+      })
+      .catch(() => caches.match(request).then(cached => cached || caches.match('/offline.html')))
   );
 });

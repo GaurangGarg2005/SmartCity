@@ -86,23 +86,11 @@
 }
 
 /* ── Dark mode overrides ──────────────────────────────────────── */
+:root[data-theme="dark"],
 [data-theme="dark"],
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --clr-surface:   hsl(222 25% 10%);
-    --clr-surface-2: hsl(222 25% 14%);
-    --clr-surface-3: hsl(222 25% 18%);
-    --clr-border:    hsl(222 20% 24%);
-    --clr-text:      hsl(210 20% 95%);
-    --clr-text-2:    hsl(210 10% 70%);
-    --clr-text-3:    hsl(210 10% 50%);
-    --shadow-sm:  0 1px  3px hsl(0 0% 0% / 0.3);
-    --shadow-md:  0 4px 12px hsl(0 0% 0% / 0.35);
-    --shadow-lg:  0 8px 32px hsl(0 0% 0% / 0.45);
-  }
-}
-
-[data-theme="dark"] {
+body[data-theme="dark"],
+html.dark-theme,
+.dark-theme {
   --clr-surface:   hsl(222 25% 10%);
   --clr-surface-2: hsl(222 25% 14%);
   --clr-surface-3: hsl(222 25% 18%);
@@ -110,4 +98,25 @@
   --clr-text:      hsl(210 20% 95%);
   --clr-text-2:    hsl(210 10% 70%);
   --clr-text-3:    hsl(210 10% 50%);
+  --shadow-sm:     0 1px  3px hsl(0 0% 0% / 0.3);
+  --shadow-md:     0 4px 12px hsl(0 0% 0% / 0.35);
+  --shadow-lg:     0 8px 32px hsl(0 0% 0% / 0.45);
+}
+
+/* ── Light mode overrides ─────────────────────────────────────── */
+:root[data-theme="light"],
+[data-theme="light"],
+body[data-theme="light"],
+html.light-theme,
+.light-theme {
+  --clr-surface:   hsl(0 0% 100%);
+  --clr-surface-2: hsl(210 10% 97%);
+  --clr-surface-3: hsl(210 10% 93%);
+  --clr-border:    hsl(210 10% 88%);
+  --clr-text:      hsl(220 20% 12%);
+  --clr-text-2:    hsl(220 10% 40%);
+  --clr-text-3:    hsl(220 10% 60%);
+  --shadow-sm:     0 1px  3px hsl(220 20% 10% / 0.08), 0 1px  2px hsl(220 20% 10% / 0.06);
+  --shadow-md:     0 4px 12px hsl(220 20% 10% / 0.10), 0 2px  6px hsl(220 20% 10% / 0.06);
+  --shadow-lg:     0 8px 32px hsl(220 20% 10% / 0.14), 0 4px 12px hsl(220 20% 10% / 0.08);
 }

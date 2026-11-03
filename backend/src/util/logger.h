@@ -3,9 +3,13 @@
 #include <cstdarg>
 #include <string>
 
+#ifdef ERROR
+#undef ERROR
+#endif
+
 namespace smartcity {
 
-enum class LogLevel { DEBUG, INFO, WARN, ERROR };
+enum class LogLevel { DEBUG, INFO, WARN, ERR_LEVEL };
 
 void log(LogLevel level, const char* component, const char* msg);
 
@@ -13,6 +17,6 @@ void log(LogLevel level, const char* component, const char* msg);
 #define SC_LOG_DEBUG(comp, msg) ::smartcity::log(::smartcity::LogLevel::DEBUG, comp, msg)
 #define SC_LOG_INFO(comp,  msg) ::smartcity::log(::smartcity::LogLevel::INFO,  comp, msg)
 #define SC_LOG_WARN(comp,  msg) ::smartcity::log(::smartcity::LogLevel::WARN,  comp, msg)
-#define SC_LOG_ERR(comp,   msg) ::smartcity::log(::smartcity::LogLevel::ERROR, comp, msg)
+#define SC_LOG_ERR(comp,   msg) ::smartcity::log(::smartcity::LogLevel::ERR_LEVEL, comp, msg)
 
 } // namespace smartcity

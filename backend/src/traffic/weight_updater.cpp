@@ -46,7 +46,7 @@ float WeightUpdater::bpr_weight(const Edge& e,
 // ── update ────────────────────────────────────────────────────────────────
 
 WeightSnapshotPtr WeightUpdater::update(const std::vector<EdgeTrafficState>& state,
-                                         uint64_t tick_id) {
+                                         uint64_t tick_id) const {
     auto snap = std::make_shared<WeightSnapshot>(g_.edge_count(), tick_id);
 
     for (uint32_t i = 0; i < g_.edge_count(); ++i) {

@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="/css/graph-mode.css" />
   <link rel="stylesheet" href="/css/nav.css" />
 </head>
-<body data-theme="system">
+<body data-theme="light" class="light-theme">
 
   <!-- ══ Cold-start overlay (shown while free server wakes) ════════════════ -->
   <div id="cold-start-overlay" class="cold-start" role="status" aria-live="polite">
@@ -97,6 +97,8 @@
 
       <!-- Route result panel -->
       <div class="route-panel hidden" id="route-panel" aria-label="Route details">
+        <!-- Multiple route alternative tabs -->
+        <div class="route-tabs hidden" id="route-tabs" role="tablist" aria-label="Route options"></div>
         <div class="route-summary">
           <span class="route-stat" id="route-duration">— min</span>
           <span class="route-stat route-stat--dist" id="route-distance">— km</span>
@@ -107,19 +109,35 @@
         <ul class="route-steps" id="route-steps" aria-label="Turn-by-turn directions"></ul>
         <p class="route-error hidden" id="route-error"></p>
 
-        <!-- Leave-time selector (Phase 5: horizon prediction) -->
+        <!-- Leave-time selector (Real-time dynamic future departure) -->
         <div class="leave-time" id="leave-time" aria-label="Leave time">
           <button class="leave-btn active" data-horizon="0" id="leave-now">Now</button>
-          <button class="leave-btn" data-horizon="5"  id="leave-5">+5 min</button>
-          <button class="leave-btn" data-horizon="10" id="leave-10">+10 min</button>
-          <button class="leave-btn" data-horizon="15" id="leave-15">+15 min</button>
-          <button class="leave-btn" data-horizon="30" id="leave-30">+30 min</button>
+          <button class="leave-btn" data-horizon="5"  id="leave-5">+5m</button>
+          <button class="leave-btn" data-horizon="10" id="leave-10">+10m</button>
+          <button class="leave-btn" data-horizon="15" id="leave-15">+15m</button>
+          <button class="leave-btn" data-horizon="30" id="leave-30">+30m</button>
+          <button class="leave-btn" id="leave-custom-toggle" title="Choose custom departure time">Custom ⏱</button>
+        </div>
+
+        <!-- Custom departure time slider & live projection -->
+        <div class="custom-departure hidden" id="custom-departure-wrap">
+          <div class="custom-departure__row">
+            <label for="custom-departure-slider" class="custom-departure__label">Depart in:</label>
+            <input type="range" id="custom-departure-slider" min="0" max="60" value="0" step="1" class="custom-departure__slider" />
+            <div class="custom-departure__val-box">
+              <input type="number" id="custom-departure-input" min="0" max="120" value="0" class="custom-departure__num" />
+              <span class="custom-departure__unit">min</span>
+            </div>
+          </div>
+          <div class="custom-departure__status" id="custom-departure-status">
+            Departing now • Live road traffic & vehicle positions
+          </div>
         </div>
 
         <div class="route-actions">
           <button class="route-btn" id="btn-get-route">Get Route</button>
           <button class="route-btn route-btn--clear" id="btn-clear-route">Clear</button>
-          <button class="route-btn route-btn--theme" id="btn-theme" aria-label="Toggle theme">🌙</button>
+          
         </div>
       </div>
     </div>
@@ -157,10 +175,12 @@
 
   <!-- ══ Map overlay controls ══════════════════════════════════════════════ -->
   <div class="map-controls" id="map-controls" aria-label="Map controls">
+    
     <button class="map-btn" id="btn-zoom-in"   aria-label="Zoom in">+</button>
     <button class="map-btn" id="btn-zoom-out"  aria-label="Zoom out">−</button>
     <button class="map-btn" id="btn-compass"   aria-label="Reset north" title="Reset north">⊕</button>
-    <button class="map-btn" id="btn-my-loc"    aria-label="My location">⊙</button>
+    <button class="map-btn" id="btn-my-loc" aria-label="My location" title="My location">⊙</button>
+    <button class="map-btn" id="btn-share-location" aria-label="Share my location" title="Share location (opt-in)">📍</button>
   </div>
 
   <!-- ══ Layer toggles ════════════════════════════════════════════════════ -->
@@ -229,8 +249,8 @@
       <span id="sim-speed-val">1×</span>
     </label>
     <label class="sim-label">Vehicles
-      <input type="range" id="sim-vehicles" min="50" max="2000" step="50" value="500" aria-label="Vehicle count" />
-      <span id="sim-vehicles-val">500</span>
+      <input type="range" id="sim-vehicles" min="50" max="3000" step="50" value="1500" aria-label="Vehicle count" />
+      <span id="sim-vehicles-val">1500</span>
     </label>
     <label class="sim-label">Scenario
       <select id="sim-scenario" aria-label="Traffic scenario">
@@ -307,13 +327,7 @@
       <h2 class="settings-panel__title">Settings</h2>
       <button class="settings-panel__close" id="btn-settings-close" aria-label="Close settings">✕</button>
     </div>
-    <label class="setting-row">Theme
-      <select id="setting-theme" aria-label="Color theme">
-        <option value="system">System</option>
-        <option value="light">Light</option>
-        <option value="dark">Dark</option>
-      </select>
-    </label>
+
     <label class="setting-row">Units
       <select id="setting-units" aria-label="Distance units">
         <option value="km">Kilometres</option>
@@ -334,19 +348,27 @@
   </div>
 
   <!-- ══ Share-location FAB (Phase 7) ════════════════════════════════ -->
-  <button class="btn-share-location" id="btn-share-location" aria-label="Share my location" title="Share location (opt-in)">📍</button>
+  
 
   <!-- ══ JS entry point ════════════════════════════════════════════════ -->
   <script type="module" src="/js/app.js"></script>
 
-  <!-- Service Worker registration -->
+  <!-- Service Worker registration & localhost cache cleanup -->
   <script>
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .then(r => console.log('[SW] registered', r.scope))
-          .catch(e => console.warn('[SW] registration failed', e));
-      });
+      if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+        navigator.serviceWorker.getRegistrations().then(regs => {
+          for (const reg of regs) reg.unregister();
+        });
+        if ('caches' in window) {
+          caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
+        }
+      } else {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .catch(e => console.warn('[SW] registration failed', e));
+        });
+      }
     }
   </script>
 </body>

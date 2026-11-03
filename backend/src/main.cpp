@@ -96,6 +96,16 @@ int main() {
             {"data_source",  "SIMULATED LIVE"},
         };
         hub.broadcast(msg.dump());
+
+        // Broadcast vehicle positions for live visualization
+        if (hub.size() > 0) {
+            auto positions = sim.vehicle_positions();
+            nlohmann::json v_msg = {
+                {"type", "vehicles"},
+                {"positions", positions}
+            };
+            hub.broadcast(v_msg.dump());
+        }
     });
 
     // Start simulation

@@ -32,7 +32,7 @@ public:
     /// Recompute edge weights from vehicle counts and publish a new snapshot.
     /// Returns the new snapshot (caller broadcasts deltas via WS).
     WeightSnapshotPtr update(const std::vector<EdgeTrafficState>& state,
-                              uint64_t tick_id);
+                              uint64_t tick_id) const;
 
     /// Which edges changed by more than DELTA_THRESHOLD seconds since last tick
     std::vector<uint32_t> changed_edges(const std::vector<EdgeTrafficState>& state) const;

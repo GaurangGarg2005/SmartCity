@@ -11,10 +11,10 @@ static std::mutex log_mutex;
 
 static const char* level_str(LogLevel l) {
     switch (l) {
-        case LogLevel::DEBUG: return "DEBUG";
-        case LogLevel::INFO:  return "INFO ";
-        case LogLevel::WARN:  return "WARN ";
-        case LogLevel::ERROR: return "ERROR";
+        case LogLevel::DEBUG:     return "DEBUG";
+        case LogLevel::INFO:      return "INFO ";
+        case LogLevel::WARN:      return "WARN ";
+        case LogLevel::ERR_LEVEL: return "ERROR";
     }
     return "?????";
 }

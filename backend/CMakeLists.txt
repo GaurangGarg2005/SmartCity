@@ -1,9 +1,10 @@
-cmake_minimum_required(VERSION 3.25)
+cmake_minimum_required(VERSION 3.22)
 project(smartcity VERSION 0.1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # ─── Build options ────────────────────────────────────────────────────────────
 option(SMARTCITY_BUILD_TESTS  "Build unit tests"  ON)
@@ -22,8 +23,8 @@ find_package(Threads REQUIRED)
 include(FetchContent)
 
 # Standalone Asio fallback (if libasio-dev not installed on host)
-find_path(SYSTEM_ASIO asio.hpp)
-if(NOT SYSTEM_ASIO AND NOT DEFINED ASIO_INCLUDE_DIR)
+find_path(ASIO_INCLUDE_DIR asio.hpp)
+if(NOT ASIO_INCLUDE_DIR)
   FetchContent_Declare(asio
     GIT_REPOSITORY https://github.com/chriskohlhoff/asio.git
     GIT_TAG        asio-1-28-0
@@ -32,8 +33,8 @@ if(NOT SYSTEM_ASIO AND NOT DEFINED ASIO_INCLUDE_DIR)
   FetchContent_GetProperties(asio)
   if(NOT asio_POPULATED)
     FetchContent_Populate(asio)
-    set(ASIO_INCLUDE_DIR "${asio_SOURCE_DIR}/asio/include" CACHE PATH "Asio include dir" FORCE)
   endif()
+  set(ASIO_INCLUDE_DIR "${asio_SOURCE_DIR}/asio/include" CACHE PATH "Asio include dir" FORCE)
 endif()
 
 # Turn off Crow examples and tests

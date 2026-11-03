@@ -81,7 +81,7 @@ struct DijkstraResult {
 // ── DijkstraRouter ──────────────────────────────────────────────────────────
 class DijkstraRouter {
 public:
-    static constexpr int VIZ_CAP  = 5000;   // max settled nodes returned
+    static constexpr int VIZ_CAP  = 70000;   // max settled nodes returned
     static constexpr float EPSILON = 0.001f; // min weight (seconds)
 
     explicit DijkstraRouter(const Graph& g, const WeightStore& ws);

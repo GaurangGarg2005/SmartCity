@@ -9,11 +9,14 @@ services:
     image: smartcity:local
     ports:
       - "8080:8080"
+    volumes:
+      - ./frontend:/app/frontend
+      - ./data:/app/data
     environment:
       PORT: "8080"
       CORS_ORIGIN: "http://localhost:8080"
       LOG_LEVEL: "debug"
-      SIM_VEHICLES: "500"
+      SIM_VEHICLES: "1500"
       SIM_SEED: "42"
       WEIGHT_MODEL: "greenshields"
       ENABLE_TOMTOM: "false"

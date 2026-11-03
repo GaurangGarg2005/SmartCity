@@ -1,14 +1,5 @@
 #pragma once
 // spatial_grid.h — O(1) average nearest-node/edge lookup via uniform grid.
-//
-// Algorithm:
-//   1. Divide the bounding box into CELL_COUNT × CELL_COUNT cells.
-//   2. Assign each node to its cell.
-//   3. nearest_node(lat, lon): check the containing cell + ring of neighbours
-//      until we find a result or exhaust the grid.
-//   4. snap_to_edge(lat, lon, graph): project query point onto every edge
-//      in candidate nodes' adjacency lists; keep the closest projection
-//      that respects the one-way direction of the edge.
 
 #include "graph.h"
 #include <cstdint>
@@ -47,6 +38,7 @@ private:
     int     cell_count_ = 0;
     float   west_,  south_, east_, north_;
     float   cell_w_, cell_h_;          // width/height of a cell in degrees
+    const Graph* g_ = nullptr;
 
     // cells_[row * cell_count_ + col] = list of node indices in that cell
     std::vector<std::vector<uint32_t>> cells_;

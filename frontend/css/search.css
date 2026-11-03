@@ -79,14 +79,46 @@
 }
 
 .autocomplete li {
-  padding: var(--sp-3) var(--sp-4);
+  padding: var(--sp-2) var(--sp-3);
   cursor: pointer;
   font-size: var(--text-sm);
   border-bottom: 1px solid var(--clr-border);
   transition: background var(--t-fast);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  outline: none;
 }
 .autocomplete li:last-child { border-bottom: none; }
 .autocomplete li:hover,
-.autocomplete li[aria-selected="true"] { background: var(--clr-surface-2); }
-.autocomplete li .ac-name  { font-weight: 500; }
-.autocomplete li .ac-sub   { color: var(--clr-text-3); font-size: var(--text-xs); margin-top: 2px; }
+.autocomplete li:focus,
+.autocomplete li.active,
+.autocomplete li[aria-selected="true"] {
+  background: var(--clr-surface-3);
+  outline: none;
+  border-left: 3px solid var(--clr-brand);
+}
+.autocomplete li .result-icon {
+  font-size: 1.15rem;
+  flex-shrink: 0;
+}
+.autocomplete li .result-body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.autocomplete li .result-name {
+  font-weight: 500;
+  color: var(--clr-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.autocomplete li .result-addr {
+  color: var(--clr-text-3);
+  font-size: var(--text-xs);
+  margin-top: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

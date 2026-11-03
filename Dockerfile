@@ -49,7 +49,7 @@ WORKDIR /app
 
 # Copy the binary
 COPY --from=builder --chown=smartcity:smartcity \
-    /build/backend/build/smartcity_server ./smartcity_server
+    /build/backend/build/src/smartcity_server ./smartcity_server
 
 # Copy data files baked into the image
 COPY --from=builder --chown=smartcity:smartcity \

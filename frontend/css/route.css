@@ -47,11 +47,107 @@
 }
 .leave-btn.active { background: var(--clr-brand); border-color: var(--clr-brand); color: #fff; }
 
+/* Custom departure time control */
+.custom-departure {
+  margin: 0 var(--sp-4) var(--sp-3) var(--sp-4);
+  padding: var(--sp-3);
+  background: var(--clr-surface-2);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+.custom-departure.hidden { display: none !important; }
+.custom-departure__row {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+.custom-departure__label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--clr-text-2);
+  white-space: nowrap;
+}
+.custom-departure__slider {
+  flex: 1;
+  accent-color: var(--clr-brand);
+  cursor: pointer;
+}
+.custom-departure__val-box {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-sm);
+  padding: 2px 6px;
+}
+.custom-departure__num {
+  width: 38px;
+  border: none;
+  background: transparent;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--clr-text);
+  text-align: right;
+  outline: none;
+}
+.custom-departure__unit {
+  font-size: var(--text-xs);
+  color: var(--clr-text-3);
+}
+.custom-departure__status {
+  font-size: var(--text-xs);
+  color: var(--clr-brand);
+  font-weight: 500;
+}
+
 /* ═══════════ Route result panel (Phase 3) ════════════════════════ */
 .route-panel {
   padding: var(--sp-4);
   border-top: 1px solid var(--clr-border);
   animation: fadeIn 0.2s ease;
+}
+
+.route-tabs {
+  display: flex;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+.route-tab {
+  flex: 1;
+  min-width: 90px;
+  padding: var(--sp-2) var(--sp-2);
+  border-radius: var(--r-md);
+  border: 1px solid var(--clr-border);
+  background: var(--clr-surface-2);
+  color: var(--clr-text-2);
+  font-size: var(--text-xs);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  transition: all var(--t-fast);
+}
+.route-tab strong {
+  font-size: var(--text-sm);
+  color: var(--clr-text);
+}
+.route-tab:hover {
+  background: var(--clr-surface-3);
+}
+.route-tab.active {
+  border-color: var(--clr-brand);
+  background: hsl(220 90% 56% / 0.15);
+  color: var(--clr-brand);
+}
+.route-tab.active strong {
+  color: var(--clr-brand);
 }
 
 .route-summary {
@@ -208,6 +304,51 @@
   border: 1px solid var(--clr-border);
   padding: var(--sp-2);
   min-width: 38px;
+}
+
+/* ═══════════ Recent searches panel ══════════════════════════════ */
+.recent-title {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--clr-text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: var(--sp-3) var(--sp-4) var(--sp-2);
+}
+
+.recent-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  cursor: pointer;
+  border-radius: var(--r-md);
+  transition: background var(--t-fast);
+}
+.recent-item:hover,
+.recent-item:focus-visible {
+  background: var(--clr-surface-2);
+  outline: none;
+}
+
+.recent-icon {
+  font-size: var(--text-base);
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.recent-name {
+  font-size: var(--text-sm);
+  color: var(--clr-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ═══════════ Context menu ════════════════════════════════════════ */

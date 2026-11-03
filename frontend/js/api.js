@@ -100,12 +100,20 @@ export async function route(from, to, opts = {}) {
     });
 }
 
-// ── Traffic ────────────────────────────────────────────────────────────────
+// ── Traffic & Vehicles ──────────────────────────────────────────────────
 
 /** @param {[number,number,number,number]} bbox [west,south,east,north] */
-export async function getTraffic(bbox, zoom = 14) {
+export async function getTraffic(bbox, zoom = 14, horizon = 0) {
     const params = new URLSearchParams({ bbox: bbox.join(','), zoom });
+    if (horizon > 0) params.set('horizon', horizon);
     return apiFetch(`/api/traffic?${params}`);
+}
+
+/** @param {number} horizon minutes into the future (0 = live) */
+export async function getVehicles(horizon = 0) {
+    const params = new URLSearchParams();
+    if (horizon > 0) params.set('horizon', horizon);
+    return apiFetch(`/api/vehicles?${params}`);
 }
 
 // ── Sim control ────────────────────────────────────────────────────────────
@@ -121,5 +129,13 @@ export async function simIncident(opts) {
     return apiFetch('/api/sim/incident', {
         method: 'POST',
         body: JSON.stringify(opts),
+    });
+}
+
+/** Add user vehicle to the live simulation */
+export async function addMyVehicle(lat, lon) {
+    return apiFetch('/api/sim/my-vehicle', {
+        method: 'POST',
+        body: JSON.stringify({ lat, lon }),
     });
 }

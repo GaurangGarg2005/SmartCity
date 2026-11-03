@@ -26,13 +26,22 @@ target_link_libraries(smartcity_server PRIVATE
   Threads::Threads
 )
 
-# Copy frontend and data directories next to the binary for local dev
+if(WIN32)
+  target_link_libraries(smartcity_server PRIVATE ws2_32 mswsock)
+endif()
+
+if(WIN32)
+  set(COPY_OR_SYMLINK copy_directory)
+else()
+  set(COPY_OR_SYMLINK create_symlink)
+endif()
+
 add_custom_command(TARGET smartcity_server POST_BUILD
-  COMMAND ${CMAKE_COMMAND} -E create_symlink
+  COMMAND ${CMAKE_COMMAND} -E ${COPY_OR_SYMLINK}
     "${CMAKE_SOURCE_DIR}/../frontend"
     "$<TARGET_FILE_DIR:smartcity_server>/frontend"
-  COMMAND ${CMAKE_COMMAND} -E create_symlink
+  COMMAND ${CMAKE_COMMAND} -E ${COPY_OR_SYMLINK}
     "${CMAKE_SOURCE_DIR}/../data"
     "$<TARGET_FILE_DIR:smartcity_server>/data"
-  COMMENT "Symlinking frontend/ and data/ next to binary"
+  COMMENT "Copying or symlinking frontend/ and data/ next to binary"
 )

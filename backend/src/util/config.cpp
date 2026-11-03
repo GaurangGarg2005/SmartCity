@@ -20,7 +20,7 @@ Config Config::from_env() {
     cfg.port          = env_int("PORT", 8080);
     cfg.graph_path    = env_or("GRAPH_PATH",     "data/graph.bin");
     cfg.places_path   = env_or("PLACES_PATH",    "data/places.json");
-    cfg.sim_vehicles  = env_int("SIM_VEHICLES",  500);
+    cfg.sim_vehicles  = env_int("SIM_VEHICLES",  1500);
     cfg.sim_seed      = env_int("SIM_SEED",      42);
     cfg.weight_model  = env_or("WEIGHT_MODEL",   "greenshields");
     cfg.tomtom_key    = env_or("TOMTOM_API_KEY", "");

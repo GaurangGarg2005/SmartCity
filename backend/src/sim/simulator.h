@@ -71,9 +71,14 @@ public:
     void set_vehicles(int n);
     void reset();
     void create_incident(uint32_t edge_idx, float duration_s, float factor);
+    void add_vehicle_at(uint32_t edge_idx, float progress_m);
     void on_tick(OnTickFn fn);
 
     SimStatus status() const;
+    std::vector<std::pair<float, float>> vehicle_positions(int horizon_min = 0) const;
+
+    /// Predict edge weights at t + horizon_min by forward-simulating vehicle positions
+    WeightSnapshotPtr predict_weights(int horizon_min) const;
 
 private:
     const Graph&       g_;
@@ -87,7 +92,7 @@ private:
     std::atomic<bool>  paused_{false};
     std::thread        thread_;
 
-    mutable std::mutex mutex_;
+    mutable std::recursive_mutex mutex_;
     SimStatus          status_;
     OnTickFn           on_tick_;
 
@@ -95,6 +100,7 @@ private:
     std::vector<Vehicle>          vehicles_;
     std::vector<EdgeTrafficState> edge_state_;
     std::vector<Incident>         incidents_;
+    std::vector<uint32_t>         major_edges_;
     uint64_t                      tick_id_{0};
 
     std::mt19937 rng_;
